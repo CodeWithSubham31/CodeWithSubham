@@ -1,0 +1,42 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Continue Keyword</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Continue Keyword</h1>
+</div>
+	<section class="mb-5 my-2 mx-2">	
+		<h5>What is Continue keyword?</h5>
+		<p>The <code>continue</code> keyword in Python is used inside loops (for or while) to skip the remaining code in the current iteration and immediately move to the next iteration of the loop.</p>
+	</section>
+	
+	<section class="mb-5 my-2 mx-2">	
+		<ul class="ps-3">
+			<li class="mb-3 lh-lg">The loop starts running</li>
+			<li class="mb-3 lh-lg">When <code>continue</code> is reached → <b>Python ignores the remaining code in that loop cycle.</b></li>
+			<li class="mb-3 lh-lg">Then the loop goes back to the beginning and checks the condition for the next cycle.</li>
+			
+		</ul>
+		<h5>Example:</h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+for i in range(5):
+    if i == 2:
+        continue  # Skip when i = 2
+    print(i)
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+0
+1
+3
+4
+    	</pre>
+    	</div>
+	</section>
+	
+	
+		<a href="/py_break" class="btn btn-light rounded-pill shadow-sm">‹ Break Keyword</a>
+          
+<a href="/py_function" class="btn btn-dark rounded-pill ms-2">Python Function ›</a>
+{%endblock body%}

@@ -1,0 +1,48 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Tuple</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python Tuple</h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	<p>Tuples are ordered collections of data items. They store multiple items in a single variable. Tuple items are separated by commas and enclosed within round brackets <code>()</code>. Tuples are unchangeable, meaning we cannot alter them after creation.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+tuple1 = (1, 2, 2, 3, 5, 4, 6)
+tuple2 = ("Red", "Green", "Blue")
+print(tuple1)
+print(tuple2)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+(1, 2, 2, 3, 5, 4, 6)
+('Red', 'Green', 'Blue')
+   </pre>
+    	</div>  
+</section>
+<section class="mb-5 my-2 mx-2">
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+details = ("Abhijeet", 18, "FYBScIT", 9.8)
+print(details)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+('Abhijeet', 18, 'FYBScIT', 9.8)
+   </pre>
+    	</div>  
+</section>
+
+<a href="/list_method" class="btn btn-light rounded-pill shadow-sm">‹List Method</a>
+          
+<a href="/tuple_indexes" class="btn btn-dark rounded-pill ms-2">Tuple Indexes›</a>
+{%endblock body%}

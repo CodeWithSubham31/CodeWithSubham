@@ -1,0 +1,227 @@
+{%extends "base.html"%}
+{%block title%}
+<title>CodeWithSubham | Home</title>
+{%endblock title%}
+{%block body%}
+<style>
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+</style>
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Welcome To</h1>
+                <h1>CodeWithSubham</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/static/6.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Learn Programming</h1>
+                <h4>Beginner-friendly tutorials</h4>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="/static/4.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Learn Development Tools</h1>
+                <h4>Essential tools every developer should know</h4>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container my-2">
+    <h1 class="text-center">Why should you learn programming?</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="/static/problem-solving.png" style="height:250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Problem Solving</h5>
+                    <p class="card-text">Coding teaches us how to break big problem in to small and solve it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/static/creativity.png" style="height:250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Creativity</h5>
+                    <p class="card-text">You can make Websites, Apps, Games and improve your creativity.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/static/carrier.avif" style="height:250px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Career Opportunities</h5>
+                    <p class="card-text">Coding skills open doors to high-paying jobs in tech and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--what you will learn-->
+<div class="container">
+    <h1 class="text-center">What you will learn : </h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-2 my-2">
+
+        <!--python-->
+        <div class="col">
+            <div class="card">
+                <center><img src="/static/python.webp" class="card-img-top" alt="..."
+                        style="height:100px; width:100px;"></center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Python Tutorial</h5>
+                    <p class="card-text">Python is a high-level, interpreted, general-purpose programming language.</p>
+                    <center><a href="#" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+
+        <!--c programming-->
+
+        <div class="col2">
+            <div class="card">
+                <center><img src="/static/c.webp" class="card-img-top" alt="..." style="height:100px; width:100px;">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">C Tutorial</h5>
+                    <p class="card-text">C language is considered as the mother language of all programming languages.
+                    </p>
+                    <center><a href="#" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--linux-->
+
+        <div class="col2">
+            <div class="card">
+                <center><img src="/static/linux.png" class="card-img-top" alt="..." style="height:115px; width:100px;">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Linux Tutorial</h5>
+                    <p class="card-text">Linux is opensource, powerful, secure operating system.</p>
+                    <center><a href="#" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--About me-->
+
+
+<div class="container">
+    <h1 class="text-center">About Me : </h1>
+    <div class="container marketing"> <!-- Three columns of text below the carousel -->
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Intro</h2>
+                <p class="lead">
+                    Hello! I'm <strong>Subham Kumar Betal</strong>, a passionate programmer from Haldia.
+                    I am currently a student at <strong>Paranchak Siksha Niketan</strong>, with a strong interest in
+                    technology, coding, and innovation.
+                    I love building real-world projects and continuously improving my skills in software development and
+                    AI.
+                </p>
+
+            </div>
+            <div class="col-md-5">  <img src="/static/subham.jpg" style="height:350px; width:350px;"> </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Skills</h2>
+                <p class="lead">
+                    I am a passionate developer with experience in building intelligent systems, modern websites, and
+                    hardware-based projects.
+                    My core skills include:
+                </p>
+                <ul class="list-unstyled">
+                    <li>Python Developer</li>
+                    <li>AI Engineer</li>
+                    <li>Web Developer</li>
+                    <li>Arduino Programmer</li>
+                </ul>
+
+            </div>
+            <div class="col-md-5 order-md-1"> <img src="/static/skills.avif" style="height:350px; width:350px;"> </div>
+        </div>
+        <hr class="featurette">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Favorite Hobby</h2>
+                <p class="lead">
+                    Coding is my favorite hobby. I enjoy traveling, discovering new cuisines, and listening to music in
+                    my free time.
+                </p>
+            </div>
+            <div class="col-md-5"> <img src="/static/hobby.webp" style="height:350px; width:350p;"></div>
+        </div>
+        <hr class="featurette"> <!-- /END THE FEATURETTES -->
+    </div>
+</div>
+
+<!--jumbotron-->
+<div class="my-0">
+    <div class="p-5 text-center text-white" style="
+         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/11.jpeg');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         min-height: 100vh;
+         display: flex;
+         align-items: center;
+         ">
+
+        <div class="container">
+            <h1 class="display-4">Start Your Coding Journey</h1>
+
+            <a href="/tutorial" class="btn" style="background: black; color: white;">
+                Start Tutorial
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+{%endblock body%}

@@ -1,0 +1,66 @@
+{%extends "base.html"%}
+{%block title%}
+<title>Tutorials</title>
+{%endblock title%}
+{%block body%}
+
+
+    <h1 class="text-center">Tutorials</h1>
+    
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-2 my-2">
+
+        <!--python-->
+        <div class="col">
+            <div class="card">
+                <center><img src="/static/python.webp" class="card-img-top" alt="..."
+                        style="height:100px; width:100px;"></center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Python Tutorial</h5>
+                    <p class="card-text">Python is a high-level, interpreted, general-purpose programming language.</p>
+                    <center><a href="/py_intro" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+
+        <!--c programming-->
+
+        <div class="col2">
+            <div class="card">
+                <center><img src="/static/c.webp" class="card-img-top" alt="..." style="height:100px; width:100px;">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">C Tutorial</h5>
+                    <p class="card-text">C language is considered as the mother language of all programming languages.
+                    </p>
+                    <center><a href="#" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+
+
+
+
+        <!--linux-->
+
+        <div class="col2">
+            <div class="card">
+                <center><img src="/static/linux.png" class="card-img-top" alt="..." style="height:115px; width:100px;">
+                </center>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Linux Tutorial</h5>
+                    <p class="card-text">Linux is opensource, powerful, secure operating system.</p>
+                    <center><a href="#" type="button" class="btn btn-dark">Start Learning</a></center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{%endblock body%}

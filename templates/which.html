@@ -1,0 +1,127 @@
+{%extends "base.html"%}
+{%block title%}
+	<title>Which programming should learn in 2025</title>
+{%endblock title%}
+{%block body%}
+<!-- Paste this into your Django template. Uses Bootstrap classes but no JS/CSS -->
+<div class="container my-4">
+  <header class="mb-4 text-center">
+    <h1 class="h3">Which Programming Language Should You Learn in 2025?</h1>
+    <p class="text-muted mb-0">Choose a field to see recommended languages and learning paths.</p>
+  </header>
+
+  <div class="row g-3">
+
+    <!-- AI / Machine Learning / Data Science -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/ai2.jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title">AI / Machine Learning / Data Science</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Python</strong> — Best for AI, ML, data science, automation, beginner-friendly.</li>
+            <li><strong>SQL</strong> — Essential for databases and data analysis.</li>
+            <li><strong>Go (Golang)</strong> — Useful for scalable backend services and cloud tooling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/web.jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title">Web Development (Frontend / Backend)</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>JavaScript + TypeScript</strong> — Core for frontend (React/Vue) and backend (Node.js/Deno). TypeScript for large projects.</li>
+            <li><strong>Python</strong> — Great for backend APIs and quick prototypes (Django/Flask/FastAPI).</li>
+            <li><strong>Go</strong> — High-performance backend microservices.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile / App Development -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/app.jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title">Mobile / App Development</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Kotlin / Java</strong> — Android native development.</li>
+            <li><strong>Swift</strong> — iOS native development.</li>
+            <li><strong>React Native / Flutter</strong> — Cross-platform mobile apps (JS / Dart).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Development -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/game.jpg" class="card-img-top" alt="...">
+          <h5 class="card-title">Game Development</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>C# (Unity)</strong> — Accessible for indie and many commercial games via Unity.</li>
+            <li><strong>C++ (Unreal)</strong> — High-performance AAA games and engines.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Systems / Embedded / Robotics -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/robot.jpeg" class="card-img-top" alt="...">
+          <h5 class="card-title">Systems / Embedded / Robotics</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>C++</strong> — High-performance systems, robotics, embedded devices.</li>
+            <li><strong>Rust</strong> — Memory-safe systems programming and modern alternative to C++.</li>
+            <li><strong>Python</strong> — Used in robotics for higher-level tasks and prototyping.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud / DevOps -->
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+        <img src="/static/images.png" class="card-img-top" alt="...">
+          <h5 class="card-title">Cloud / DevOps / Backend Services</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Go</strong> — Cloud native, microservices, Kubernetes tooling.</li>
+            <li><strong>Python</strong> — Automation, scripting, and serverless functions.</li>
+            <li><strong>Rust</strong> — For performance-sensitive cloud components.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- General / Beginner Friendly -->
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">General / Beginner Friendly</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Python</strong> — Best beginner choice with wide applicability.</li>
+            <li><strong>JavaScript + TypeScript</strong> — If you plan to do web development.</li>
+            <li><strong>SQL</strong> — Every developer benefits from database knowledge.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end my-2">
+  <a class="btn btn-dark" href="/fast"> Next Topic > </a>
+  
+</div>
+</div>
+
+
+{%endblock body%}

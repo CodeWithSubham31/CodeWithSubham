@@ -1,0 +1,56 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python OOP'S</title>
+{%endblock title%}
+{%block body%}
+	<div class="mb-5 my-2 mx-2">
+		<h1>Python OOP's</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>A class is a blueprint or a template for creating objects while an object is an instance or a copy of the class with actual values.</p>
+		
+		
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">
+		<h2>Creating a class</h2>
+		<p>Create a class using the class keyword.</p>
+		<h5>Example : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+class Details:
+    name = "Simran"
+    age = 20
+	</pre>
+	</section>
+	
+	<section class="mb-5 my-2 mx-2">
+		<h2>Creating a object</h2>
+		<p>Now create an object of the class.</p>
+		<h5>Example : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+obj1 = Details()
+print(obj1.name)
+print(obj1.age)
+	</pre>
+	</section>
+	
+
+	<section class="mb-5 my-2 mx-2">
+	
+	
+		<h5>Output : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Simran
+20
+	</pre>
+	</section>
+	
+	
+		<a href="/py_module" class="btn btn-light rounded-pill shadow-sm">‹ Python Modules</a>
+          
+<a href="/py_self" class="btn btn-dark rounded-pill ms-2">Self Method ›</a>
+{%endblock body%}

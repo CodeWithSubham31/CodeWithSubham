@@ -1,0 +1,82 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Function</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python Function</h1>
+</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>A function is a block of code that performs a specific task whenever it is called. In bigger programs, where we have large amounts of code, it is advisable to create or use existing functions that make the program flow organized and neat.</p>
+		<div class="mx-2">	
+			<h5>Types of Function in python</h5>
+			<ol class="ps-3">
+			<li class="mb-3 lh-lg">Built In Functions</li>
+			<li class="mb-3 lh-lg">User Defined Function</li>
+		</ol>
+		</div>
+	</section>
+	<section class="mb-5 my-2 mx-2">
+		<h5>built-in function</h5>
+		<p>These functions are defined and pre-coded in Python. Some examples of built-in functions are as follows:</p><br>
+		<code>min()</code>,<code>max()</code>,<code>lan()</code>,<code>sum()</code>,<code>type()</code>,<code>range()</code>,<code>dict()</code>,<code>list()</code>,<code>tuple()</code>,<code>set()</code>,<code>print()</code>
+		
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">
+	<h5>user-defined function</h5>
+	<p>We can create functions to perform specific tasks as per our needs. Such functions are called user-defined functions.</p>
+	<div class="mx-2">
+	<h5>Syntax :</h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+def function_name(parameters):
+    Code and Statements
+    	</pre>
+    	</div>
+    	
+    	
+    	  <ul class="ps-3">
+      <li class="mb-3 lh-lg">
+        Create a function using the <code>def</code> keyword, followed by a function name, followed by parentheses <code>()</code> and a colon <code>:</code>.
+      </li>
+      <li class="mb-3 lh-lg">
+        Any parameters and arguments should be placed within the parentheses.
+      </li>
+      <li class="mb-3 lh-lg">
+       Rules for naming functions are similar to those for naming variables.
+      </li>
+      
+       <li class="mb-3 lh-lg">
+       	Any statements and other code within the function should be indented.
+       </li>
+    </ul>
+    
+    
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">
+		<h5>call a function</h5>
+		<p>We call a function by giving the function name, followed by parameters (if any) in the parentheses.</p>
+		
+			
+	<h5>Example :</h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+def name(fname, lname):
+    print("Hello,", fname, lname)
+
+name("Sam", "Wilson")
+    	</pre>
+    
+    	<h5>Output :</h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Hello, Sam Wilson
+    	</pre>
+	</section>
+	
+	
+		<a href="/py_continue" class="btn btn-light rounded-pill shadow-sm">‹ Continue Keyword</a>
+          
+<a href="/py_func_arg" class="btn btn-dark rounded-pill ms-2">Function Argument ›</a>
+{%endblock body%}

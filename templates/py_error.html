@@ -1,0 +1,106 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>Error handeling</title>
+{%endblock title%}
+{%block body%}
+	<div class="mb-5 my-2 mx-2">
+		<h1>&lt;/CodeWithSubham&gt; | Error handeling</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>In python we use <b>try...except</b> block for error handeling. The code in the try block runs when there is no error. If the try block catches an error, then the except block is executed.
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">	
+		<h5>Example : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+try:
+    num = int(input("Enter an integer: "))
+except ValueError:
+    print("Number entered is not an integer.")
+	</pre>
+	</section>
+	
+		<section class="mb-5 my-2 mx-2">	
+		<h5>Output1 : </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter an integer: 6.022
+Number entered is not an integer.
+	</pre>
+	<div class="my-2">
+		<h5>Output2: </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter an integer: -8.5
+Number entered is not an integer.
+	</pre>
+	</div>
+	</
+	<div>
+		<h5>Output3: </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter an integer: -36
+	</pre>
+	</div>
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">
+		<p>In addition to try and except blocks, we also have <code>else</code> and <code>finally</code> blocks. The code in the <b>else</b> block is executed when there is no error in the <b>try</b> block.</p>
+		
+		
+		<h5>Example : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+try:
+    num = int(input("Enter an integer: "))
+except ValueError:
+    print("Number entered is not an integer.")
+else:
+    print("Integer Accepted.")
+	</pre>
+	</section>
+		<section class="mb-5 my-2 mx-2">
+			<h5>Output : </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter an integer: 69
+Integer Accepted.
+	</pre>
+	</section>
+	
+	
+	
+	<section class="mb-5 my-2 mx-2">
+	<p>The <code>finally</code> block is executed whatever the outcome of <b>try... except... else</b> blocks.</p>
+			<h5>Example : </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+try:
+    num = int(input("Enter an integer: "))
+except ValueError:
+    print("Number entered is not an integer.")
+else:
+    print("Integer Accepted.")
+finally:
+    print("This block is always executed.")
+	</pre>
+	</section>
+	
+		
+	<section class="mb-5 my-2 mx-2">
+
+			<h5>Output :  </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter an integer: 19
+Integer Accepted.
+This block is always executed.
+	</pre>
+	</section>
+<a href="/__init__" class="btn btn-light rounded-pill shadow-sm">‹ __init__ method</a>
+<a href="/py_project_1" class="btn btn-dark rounded-pill ms-2">Project1 (stone paper secior game)›</a>	
+{%endblock body%}

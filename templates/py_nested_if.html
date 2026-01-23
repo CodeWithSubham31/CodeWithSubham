@@ -1,0 +1,40 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Nested If</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Nested If Else Statement</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+	<p>We can use <b>if, if...else, elif statements inside other if statements.</b></p>
+	
+	
+	<h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+num = 18
+if (num < 0):
+    print("Number is negative.")
+elif (num > 0):
+    if (num <= 10):
+        print("Number is between 1-10")
+    elif (num > 10 and num <= 20):
+        print("Number is between 11-20")
+    else:
+        print("Number is greater than 20")
+else:
+    print("Number is zero")
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Number is between 11-20
+    	</pre>
+    </div>
+	</section>
+	
+	
+		<a href="/py_if_elif_else" class="btn btn-light rounded-pill shadow-sm">‹ If Elif Else Statement</a>
+          
+<a href="/py_for_loop" class="btn btn-dark rounded-pill ms-2">For Loop ›</a>
+	
+{%endblock body%}

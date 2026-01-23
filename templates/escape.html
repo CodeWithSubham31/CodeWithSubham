@@ -1,0 +1,111 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Escape Characters</title>
+{%endblock title%}
+{%block body%}
+
+
+<div class="mb-5 my-2 mx-2">
+	<h1>Escape Characters</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+   
+    <p>Escape Characters are very important in Python. They allow us to insert illegal characters into a string, such as a backslash, new line, or a tab.</p>
+    <p>Single/Double Quote: used to insert single/double quotes in the string.</p>
+    <div class="my-3">
+    
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str1 = "He was \"Flabergasted\"."
+str2 = 'He was \'Flabergasted\'.'
+print(str1)
+print(str2)
+    	</pre>
+    	</div>
+    	<div class="my-4">
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+He was "Flabergasted".
+He was 'Flabergasted'.
+    	</pre> 	
+    </div>
+    
+    
+    <div class="my-3">
+    <h4 class="h3 fw-bold mb-3">New Line: inserts a new line wherever specified.</h4>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str1 = "I love doing Yoga. \nIt cleanses my mind and my body."
+print(str1)
+    	</pre>
+    	</div>
+    	<div class="my-4">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+I love doing Yoga.
+It cleanses my mind and my body.
+    	</pre>
+    
+    </div>
+    
+    <div class="my-3">
+    	<h4 class="h3 fw-bold mb-3">Tab: inserts a tab wherever specified</h4>
+    	
+    </div>
+    <div class="my-3">
+    
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str2 = "Hello \t\tWorld \t!!!"
+print(str2)
+    	</pre>
+    	</div>
+    		<div class="my-4">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Hello           World   !!!
+    	</pre>
+    	
+    </div>
+    <div class="my-3">
+  <h4 class="h3 fw-bold mb-3">Backspace: erases the character before it wherever it is specified.</h4>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str2 = "Hello  \bWorld !!!"
+print(str2)
+    	</pre>
+    	</div>
+    	<div class="my-4">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Hello World !!!
+    	</pre>
+    </div>
+    	
+    </div>
+    
+    
+    
+    
+        <div class="my-3">
+  <h4 class="h3 fw-bold mb-3">Backslash: used to insert a backslash into a string.</h4>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str3 = "What will you eat? Apple\\Banana"
+print(str3)
+    	</pre>
+    	</div>
+    	<div class="my-4">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+What will you eat? Apple\Banana
+    	</pre>
+    </div>
+    	
+    </div>
+    </section>
+<a href="/f_string" class="btn btn-light rounded-pill shadow-sm">‹F String</a>
+          
+<a href="/py_list" class="btn btn-dark rounded-pill ms-2">Python List›</a>
+
+{%endblock body%}

@@ -1,0 +1,37 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>Python Type Casting</title>
+{%endblock title%}
+{%block body%}
+<section class="mb-5 my-2 mx-2">
+    <h1 class="h3 fw-bold mb-3">Type Casting</h1>
+    <p>Similar to type conversion, type casting is done when we want to specify a type on a variable.</p>
+    </section>
+    <section class="mb-5 my-2 mx-2">
+    	<h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str1 = "7"          
+str2 = "3.142"
+str3 = "13"
+num1 = 29
+num2 = 6.67
+
+print(int(str1))
+print(float(str2))
+print(float(str3))
+print(str(num1))
+print(str(num2))
+    	</pre>
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+7
+3.142
+13.0
+29
+6.67
+    	</pre>
+    </section>
+          <a href="/py_input" class="btn btn-light rounded-pill shadow-sm">‹Input() Funcgtion</a>
+          
+<a href="/py_string" class="btn btn-dark rounded-pill ms-2">Python Strings›</a>
+{%endblock body%}

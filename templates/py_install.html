@@ -1,0 +1,65 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Installation</title>
+{%endblock title%}
+{%block body%}
+<!-- Bootstrap-only snippet (paste inside your Django template block) -->
+<div class="container py-4">
+  <!-- Title -->
+  <div class="mb-4">
+    <h1 class="display-6 fw-bold">Installation &amp; Getting Started</h1>
+  </div>
+
+  <!-- Steps to Install -->
+  <section class="mb-4">
+    <h2 class="h4 fw-bold mb-3">Steps to Install Python:</h2>
+    <ol class="ps-3">
+      <li class="mb-2">Visit the official <a href="https://python.org/downloads">python website</a></li>
+      <li class="mb-2">Download the executable file based on your OS</li>
+      <li class="mb-2">Run the installer and complete installation</li>
+    </ol>
+
+    <div class="mt-3">
+      <strong>Version:</strong>
+      <p class="mb-0">After installation, check the version by typing:</p>
+      <div class="mt-2">
+        <span class="badge bg-light text-dark py-2 px-3">python --version</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Starting Python + Code example -->
+  <section class="mb-4">
+    <h3 class="h5 fw-bold mb-3">Starting Python:</h3>
+    <p class="text-muted">Open Python IDE or any text editor. Type the following:</p>
+
+    <!-- Code block (dark rounded) -->
+    <div class="d-flex align-items-start mb-2">
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+print("Hello World !!!")
+      </pre>
+      
+    </div>
+
+    <p class="mt-3 mb-1 text-muted">Now save the file with a <span class="badge bg-light text-dark">.py</span> extension and run it. You will get the following output:</p>
+
+    <pre class="bg-dark text-light rounded-3 p-3">Hello World !!!</pre>
+  </section>
+
+  <!-- Installing Packages -->
+  <section class="mb-5">
+    <h4 class="h5 fw-bold mb-3">Installing Packages:</h4>
+    <p class="text-muted mb-2">To install packages in Python we use the <code>pip</code> command. e.g.</p>
+    <div class="mb-3">
+      <pre class="bg-dark text-light rounded-3 p-3 mb-0">pip install "Package Name"</pre>
+    </div>
+    <p class="text-muted mb-2">Example (pandas):</p>
+    <pre class="bg-dark text-light rounded-3 p-3">pip install pandas</pre>
+  </section>
+
+  <!-- Pills / Navigation like -->
+  <a href="/py_intro" class="btn btn-light rounded-pill shadow-sm">‹ Python Introduction</a>
+<a href="/py_syntax" class="btn btn-dark rounded-pill ms-2">Python Syntax? ›</a>
+</div>
+
+{%endblock body%}

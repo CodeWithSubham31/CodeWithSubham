@@ -1,0 +1,30 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Set</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python Set</h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	<p>Sets are unordered collections of data items. They store multiple items in a single variable. Set items are separated by commas and enclosed within curly brackets <code>{}</code>. Sets are unchangeable, meaning you cannot change items of the set once created. Sets do not contain duplicate items.</p>
+		<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {"Carla", 19, False, 5.9, 19}
+print(info)
+    	</pre>
+    	</div>
+    	
+    		<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{False, 19, 5.9, 'Carla'}
+    	</pre>
+    	</div>
+</section>
+
+<a href="/tuple_manipulating" class="btn btn-light rounded-pill shadow-sm">‹Tuple Manipulating</a>
+          
+<a href="/set_method" class="btn btn-dark rounded-pill ms-2">Set Method›</a>
+{%endblock body%}

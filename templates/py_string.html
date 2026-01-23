@@ -1,0 +1,103 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python String</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python String</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+    <h3 class="h3 fw-bold mb-3">What is String</h3>
+    <p>In Python, anything that you enclose between <code>single or double quotation marks</code> is considered a <code>string</code>. A string is essentially a sequence or array of textual data.</p>
+    <div class="my-3">
+    <p>Strings are used when working with Unicode characters.</p>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = "Samuel"
+print("Hello, " + name)
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Hello, Samuel
+    	</pre>
+    </div>
+    </section>
+    <section class="mb-5 my-2 mx-2">
+    <b>Note : </b><p> It does not matter whether you enclose your strings in single or double quotes, the output remains the same.</p>
+    <div class="my-3">
+    <p>Sometimes, the user might need to put quotation marks in between the strings. Example, consider the sentence: He said, “I want to eat an apple”.</p>
+    </div>
+    <div class="my-3">
+    <h5>Wrong way : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+print("He said, "I want to eat an apple".")
+    	</pre>
+    	</div>
+    	<div class="my-3">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+print("He said, "I want to eat an apple".")
+                     ^
+SyntaxError: invalid syntax
+    	</pre>
+    </div>
+    
+    	<div class="my-5">
+    	<h5>Right way : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+print('He said, "I want to eat an apple".')
+#OR
+print("He said, \"I want to eat an apple\".")
+    	</pre>
+    
+   
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+He said, "I want to eat an apple".
+He said, "I want to eat an apple".
+    	</pre>
+    </div>
+   
+    </section>
+    
+    <section class="mb-5 my-2 mx-2" >
+    <h5>What if you want to write multiline strings?</h5>
+    <p>Sometimes the programmer might want to include a note, or a set of instructions, or just might want to explain a piece of code. Although this might be done using multiline comments, the programmer may want to display this in the execution of programmer. This is done using multiline strings.</p>
+      <div class="my-3">
+    	<h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+receipe = """
+1. Heat the pan and add oil
+2. Crack the egg
+3. Add salt in egg and mix well
+4. Pour the mixture in pan
+5. Fry on medium heat
+"""
+print(receipe)
+
+note = '''
+This is a multiline string
+It is used to display multiline message in the program
+'''
+print(note)
+    	</pre>
+    </div>
+   <div class="my-3">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+1. Heat the pan and add oil
+2. Crack the egg
+3. Add salt in egg and mix well
+4. Pour the mixture in pan
+5. Fry on medium heat
+
+
+This is a multiline string
+It is used to display multiline message in the program
+    	</pre>
+    </section>
+    
+         <a href="/type_casting" class="btn btn-light rounded-pill shadow-sm">‹Type Casting</a>
+          
+<a href="/str_method" class="btn btn-dark rounded-pill ms-2">String method›</a>
+{%endblock body%}

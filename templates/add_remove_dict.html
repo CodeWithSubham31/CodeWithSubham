@@ -1,0 +1,124 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Add or Remove Dictionary Items</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Add or Remove Dictionary Items</h1>
+</div>
+<div class="mb-5 my-2 mx-2">
+<h2>Adding items : </h2>
+</div>
+
+<section class="mb-5 my-2 mx-2">
+	<h3>Create a new key and assign a value to it:</h3>
+	
+	    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name': 'Karan', 'age': 19, 'eligible': True}
+print(info)
+info['DOB'] = 2001
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'name': 'Karan', 'age': 19, 'eligible': True}
+{'name': 'Karan', 'age': 19, 'eligible': True, 'DOB': 2001}
+   </pre>
+    	</div>  
+</section>	
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3>Use the update() method:</h3>
+	<p>The <code>update()</code> method updates the value of the key provided to it if the item already exists in the dictionary, else it creates a new key-value pair.</p>
+	
+	    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name': 'Karan', 'age': 19, 'eligible': True}
+print(info)
+info.update({'age': 20})
+info.update({'DOB': 2001})
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'name': 'Karan', 'age': 19, 'eligible': True}
+{'name': 'Karan', 'age': 20, 'eligible': True, 'DOB': 2001}
+   </pre>
+    	</div>  
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+	<h2>Removing items :</h2>
+	<h3>remove()</h3>
+	<p>The <code>clear()</code> method removes all the items from the dictionary.</p>
+	
+	    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name': 'Karan', 'age': 19, 'eligible': True}
+info.clear()
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{}
+   </pre>
+    	</div>  
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+	
+	<h3>pop()</h3>
+	<p>The <code>pop()</code> method removes the key-value pair whose key is passed as a parameter.</p>
+	
+	    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name': 'Karan', 'age': 19, 'eligible': True}
+info.pop('eligible')
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'name': 'Karan', 'age': 19}
+   </pre>
+    	</div>  
+</section>
+
+
+
+<section class="mb-5 my-2 mx-2">
+	
+	<h3>popitem()</h3>
+	<p>The <code>popitem()</code> method removes the last key-value pair from the dictionary.</p>
+	
+	    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name': 'Karan', 'age': 19, 'eligible': True, 'DOB': 2003}
+info.popitem()
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'name': 'Karan', 'age': 19, 'eligible': True}
+   </pre>
+    	</div>  
+</section>
+
+
+<a href="/dict_access" class="btn btn-light rounded-pill shadow-sm">‹Access Dictionary Items</a>
+          
+<a href="/py_if" class="btn btn-dark rounded-pill ms-2">If Statement›</a>
+{%endblock body%}

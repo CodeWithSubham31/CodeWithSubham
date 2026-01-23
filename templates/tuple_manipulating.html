@@ -1,0 +1,61 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>Tuple Manipulating</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Tuple Manipulating</h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	<p>Tuples are immutable, hence if you want to add, remove or change tuple items, then first you must convert the tuple to a list. Then perform operations on that list and convert it back to a tuple.</p>
+	
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+countries = ("Spain", "Italy", "India", "England", "Germany")
+temp = list(countries)
+temp.append("Russia")       # add item 
+temp.pop(3)                 # remove item
+temp[2] = "Finland"         # change item
+countries = tuple(temp)
+print(countries)
+    	</pre>
+    	</div>
+    	
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+('Spain', 'Italy', 'Finland', 'Germany', 'Russia')
+    	</pre>
+    	<p>Thus, <b>we convert the tuple to a list, manipulate items of the list using list methods, then convert the list back to a tuple.</b></p>
+    	</div>
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+	<p>However, we can directly concatenate two tuples instead of converting them to a list and back.</p>
+	
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+countries = ("Pakistan", "Afghanistan", "Bangladesh", "ShriLanka")
+countries2 = ("Vietnam", "India", "China")
+southEastAsia = countries + countries2
+print(southEastAsia)
+    	</pre>
+    	</div>
+    	
+    	
+    	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+('Pakistan', 'Afghanistan', 'Bangladesh', 'ShriLanka', 'Vietnam', 'India', 'China')
+    	</pre>
+    	</div>
+</section>
+<a href="/py_tuple" class="btn btn-light rounded-pill shadow-sm">‹Python Tuple</a>
+          
+<a href="/py_set" class="btn btn-dark rounded-pill ms-2">Python Set›</a>
+{%endblock body%}

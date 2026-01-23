@@ -1,0 +1,71 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>For loop</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python For Loop</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>Sometimes a programmer wants to execute a group of statements a certain number of times. This can be done using loops. Based on this, loops are further classified into the following types: <code>for loop, while loop.</code></p>
+		<h5>For loops</h5>
+		<p>For loops can iterate over a sequence of iterable objects in Python. Iterating over a sequence is nothing but iterating over strings, lists, tuples, sets, and dictionaries.</p>
+			<p><h5>Example:</h5> iterating over a string:</p>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = 'Abhishek'
+for i in name:
+    print(i, end=", ")
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+A, b, h, i, s, h, e, k,
+    	</pre>
+    </div>
+	</section>
+	
+	
+	
+	<section class="mb-5 my-2 mx-2">
+			<p><h5>Example:</h5> iterating over a tuple:</p>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ("Red", "Green", "Blue", "Yellow")
+for x in colors:
+    print(x)
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Red
+Green
+Blue
+Yellow
+    	</pre>
+    	<p>Similarly, <b>we can use loops for lists, sets, and dictionaries.</b></p>
+    </div>
+	</section>
+	
+	<section class="mb-5 my-2 mx-2">
+		<h5>range()</h5>
+		<p>We use <code>range()</code> for print a sequence of numbers</p>
+		
+		<h5>Example:</h5> 
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+for k in range(5):
+    print(k)
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+0
+1
+2
+3
+4
+    	</pre>
+    	<p>Here, we can see that the loop starts from 0 by default and increments at each iteration.</p>
+    </div>
+	</section>
+	
+	
+		<a href="/py_nested_if" class="btn btn-light rounded-pill shadow-sm">‹ Nested If Statement</a>
+          
+<a href="/py_while_loop" class="btn btn-dark rounded-pill ms-2">While Loop ›</a>
+{%endblock body%}

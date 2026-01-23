@@ -1,0 +1,92 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | F String</title>
+{%endblock title%}
+{%block body%}
+	<div class="mb-5 my-2 mx-2">
+	<h1>Format String</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+    <h3 class="h3 fw-bold mb-3">What if we want to join two separated strings?</h3>
+    <p>We can perform concatenation to join two or more separate strings.</p>
+    <div class="my-3">
+    
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+str4 = "Captain"
+str5 = "America"
+str6 = str4 + " " + str5
+print(str6)
+    	</pre>
+    	</div>
+    	<div class="my-4">
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Captain America
+    	</pre> 	
+    </div>
+    
+    
+    <div class="my-3">
+    <p>In the above example, we saw how one can concatenate two strings. But how can we concatenate a string and an integer?</p>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = "Guzman"
+age = 18
+print("My name is" + name + "and my age is" + age)
+    	</pre>
+    	</div>
+    	<div class="my-5">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+TypeError: can only concatenate str (not "int") to str
+    	</pre>
+    	<p>As we can see, we cannot concatenate a string to another data type.</p>
+    </div>
+    
+    <div class="my-3">
+    	<h3 class="h3 fw-bold mb-3">So what’s the solution?</h3>
+    	<p>We make use of the <code>format()</code> method. The <code>format()</code> method places the arguments within the string wherever the placeholders are specified.</p>
+    </div>
+    <div class="my-3">
+    
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = "Guzman"
+age = 18
+statement = "My name is {} and my age is {}."
+print(statement.format(name, age))
+    	</pre>
+    	</div>
+    		<div class="my-5">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+My name is Guzman and my age is 18.
+    	</pre>
+    	
+    </div>
+    <div class="my-3">
+  <p>We can also make use of indexes to place the arguments in a specified order.</p>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+quantity = 2
+fruit = "Apples"
+cost = 120.0
+statement = "I want to buy {2} dozen {0} for {1}$"
+print(statement.format(fruit, cost, quantity))
+    	</pre>
+    	</div>
+    	<div class="my-5">
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+I want to buy 2 dozen Apples for $120.0
+    	</pre>
+    	
+    </div>
+    	
+    </div>
+    </section>
+  <a href="/str_method" class="btn btn-light rounded-pill shadow-sm">‹String Method</a>
+          
+<a href="/escape" class="btn btn-dark rounded-pill ms-2">Escape Character›</a>
+{%endblock body%}

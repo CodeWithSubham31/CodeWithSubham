@@ -1,0 +1,129 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>Python Tuple</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Tuple Indexes</h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	<p>Each item/element in a tuple has its own unique index. This index can be used to access any particular item from the tuple. The first item has index <code>[0]</code>, the second item has index <code>[1]</code>, the third item has index <code>[2]</code>, and so on.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]
+    	</pre>
+    	</div>
+</section>
+<div class="mb-5 my-2 mx-2">
+	<h1>Accessing tuple items : </h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Positive Indexing :</h3>
+	<p>As we have seen that tuple items have an index, we can access items using these indexes.</p>
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]
+print(country[1])
+print(country[3])
+print(country[0])
+    	</pre>
+    	</div>
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Italy
+England
+Spain
+    	</pre>
+    	</div>
+</section>
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Negative Indexing :</h3>
+	<p>Similar to positive indexing, negative indexing is also used to access items, but from the end of the tuple. The last item has index <code>[-1]</code>, the second last item has index <code>[-2]</code>, the third last item has index <code>[-3]</code>, and so on.</p>
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]
+print(country[-1])
+print(country[-3])
+print(country[-4])
+    	</pre>
+    	</div>
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Germany
+India
+Italy
+    	</pre>
+    	</div>
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Check for items</h3>
+	<p>We can check if a given item is present in the tuple. This is done using the <code>in</code> keyword.</p>
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+country = ("Spain", "Italy", "India", "England", "Germany")
+if "Germany" in country:
+    print("Germany is present.")
+else:
+    print("Germany is absent.")
+    	</pre>
+    	</div>
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Germany is present.
+    	</pre>
+    	</div>
+</section>
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Range of index : </h3>
+	<p>You can print a range of tuple items by specifying where you want to start, where you want to end, and if you want to skip elements in between the range.</p>
+	
+	<div class="my-3">
+    <h5>Syntax : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Tuple[start : end : jumpIndex]
+    	</pre>
+    	<p><b>Note</b>: <code>jumpIndex</code> is optional. We will see this in given examples.</p>
+    	</div>
+	
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[3:7])     # using positive indexes
+print(animals[-7:-2])   # using negative indexes
+    	</pre>
+    	</div>
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+('mouse', 'pig', 'horse', 'donkey')
+('bat', 'mouse', 'pig', 'horse', 'donkey')
+    	</pre>
+    	<p>Here, we provide the index of the element from where we want to start and the index of the element till which we want to print the values</p>
+    	</div>
+</section>
+
+<a href="/py_tuple" class="btn btn-light rounded-pill shadow-sm">‹Python tuple</a>
+          
+<a href="/tuple_manipulating" class="btn btn-dark rounded-pill ms-2">Tuple Manipulating›</a>
+{%endblock body%}

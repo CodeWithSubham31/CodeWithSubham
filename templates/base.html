@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%block title%}
+    <title>Bootstrap demo</title>
+    {%endblock title%}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">&lt;/CodeWithSubham&gt;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/tutorial">Tutorial</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark mx-2" href="#">Sign Up</a>
+                <a class="btn btn-outline-dark" href="/signin">Sign In</a>
+            </div>
+        </div>
+
+    </nav>
+     <!--alerts-->
+     {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 " role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+    {% endif %}
+    
+
+    {%block body%}
+    {%endblock body%}
+
+<footer class="bg-body-tertiary mt-auto py-4 my-3">
+      <div class="container">
+        <div class="row">
+          <!-- Main -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Main</h5>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-decoration-none text-dark">Home</a></li>
+              <li><a href="/user_signup" class="text-decoration-none text-dark">Sign Up</a></li>
+              <li><a href="/user_signin" class="text-decoration-none text-dark">Sign In</a></li>
+            </ul>
+          </div>
+          <!-- Learn -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Learn</h5>
+            <ul class="list-unstyled">
+              <li><a href="/tutorial" class="text-decoration-none text-dark">Tutorials</a></li>
+              <li><a href="/blog" class="text-decoration-none text-dark">Blogs</a></li>
+              
+            </ul>
+          </div>
+          <!-- Social -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Social</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/CodeWithSubham31" class="text-decoration-none text-dark"><i class="bi bi-github"></i> GitHub</a></li>
+              <li><a href="https://youtube.com/@codewithsubham31" class="text-decoration-none text-dark"><i class="bi bi-youtube"></i> YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bottom text -->
+        <div class="text-center mt-3">
+          <small>Made with ❤️ and ☕ in India</small>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Syntax</title>
+{%endblock title%}
+{%block body%}
+<main class="container py-4">
+<section class="mb-5 mx-2">
+
+    <h3 class="h3 fw-bold mb-3">What is Syntax?</h3>
+    <ul class="ps-3">
+      <li class="mb-3 lh-lg">
+        In simplest words, Syntax is the arrangement of words and phrases to create well-formed sentences in a language. In the case of a computer language, the syntax is the structural arrangement of comments, variables, numbers, operators, statements, loops, functions, classes, objects, etc. which helps us understand the meaning or semantics of a computer language.
+      </li>
+      <li class="mb-3 lh-lg">
+        For example, a ‘comment’ is used to explain the functioning of a block of code. It starts with a ‘#’.
+      </li>
+      <li class="mb-3 lh-lg">
+        More on comments in the comments chapter.
+      </li>
+      
+       <li class="mb-3 lh-lg">
+        For example, a block of code is identified by an ‘indentation’. Have a look at the following code, here <code>print(i) </code>is said to be indented with respect to the line above it. In simple words, indentation is the addition of spaces before the line <code>print(i)</code>.
+      </li>
+    
+        <div class="d-flex align-items-start mb-2">
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+for i in range(10):
+	print(i)
+      </pre>
+      
+    </div>
+    </ul>
+  </section>
+  
+  <a href="/py_install" class="btn btn-light rounded-pill shadow-sm">‹ Python Installation</a>
+<a href="/py_comment" class="btn btn-dark rounded-pill ms-2">comments ›</a>
+</div>
+</main>
+{%endblock body%}

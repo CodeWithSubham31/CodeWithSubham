@@ -1,0 +1,48 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python If Statement</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>If Statement</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>Sometimes the programmer needs to check the evaluation of certain expression(s), whether the expression(s) evaluate to True or False. If the expression evaluates to False, then the program execution follows a different path than it would have if the expression had evaluated to True.</p>
+		<p>Based on this, <b>the conditional statements are further classified into the following types: if, if......else, elif, nested if.</b></p>
+	</section>
+	
+	
+	<section class="mb-5 my-2 mx-2">
+		<h3>If Statement : </h3>
+		<p>A simple if statement works on the following principle:</p>
+		 <ul class="ps-3">
+      <li class="mb-3 lh-lg">
+        Execute the block of code inside the if statement if the expression evaluates to True.
+      </li>
+      <li class="mb-3 lh-lg">
+        Ignore the block of code inside the if statement if the expression evaluates to False and return to the code outside the if statement.
+      </li>
+      
+    </ul>
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+applePrice = 180
+budget = 200
+if (applePrice <= budget):
+    print("Alexa, add 1kg Apples to the cart.")
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Alexa, add 1kg Apples to the cart.
+    	</pre>
+    </div>
+	</section>
+	
+	
+	
+	
+	<a href="/add_remove_dict" class="btn btn-light rounded-pill shadow-sm">‹ Add/Remove Dict Items</a>
+          
+<a href="/py_if_else" class="btn btn-dark rounded-pill ms-2">If-Else statement›</a>
+
+{%endblock body%}

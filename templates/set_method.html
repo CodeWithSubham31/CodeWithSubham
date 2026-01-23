@@ -1,0 +1,174 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Set Method</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Set Method</h1>
+</div>
+
+
+
+<!--isdisjoint()-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">isdisjoint(): </h3>
+	<p>The <code>isdisjoint()</code> method checks if items of a given set are present in another set. This method returns <code>False</code> if items are present, else it returns <code>True</code>.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+print(cities.isdisjoint(cities2))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+False
+   </pre>
+    	</div>  
+</section>
+
+
+
+<!--issuperset()-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">issuperset(): </h3>
+	<p>The <code>issuperset()</code> method checks if all the items of a particular set are present in the original set. It returns <code>True</code> if all the items are present, else it returns <code>False</code>.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul"}
+print(cities.issuperset(cities2))
+cities3 = {"Seoul", "Madrid", "Kabul"}
+print(cities.issuperset(cities3))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+False
+False
+   </pre>
+    	</div>  
+</section>
+
+
+
+<!--issubset()-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">issubset(): </h3>
+	<p>The <code>issubset()</code> method checks if all the items of the original set are present in the particular set. It returns <code>True</code> if all the items are present, else it returns <code>False</code>.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Delhi", "Madrid"}
+print(cities2.issubset(cities))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+True
+   </pre>
+    	</div>  
+</section>
+
+
+
+<!--add() method-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">add(): </h3>
+	<p><code>add()</code> method used to add single element to a set. </p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.add("Helsinki")
+print(cities)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'Tokyo', 'Helsinki', 'Madrid', 'Berlin', 'Delhi'}
+   </pre>
+    	</div>  
+</section>
+
+
+
+<!--update()-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">update(): </h3>
+	<p><code>update()</code> method used to add a set to a set. </p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Helsinki", "Warsaw", "Seoul"}
+cities.update(cities2)
+print(cities)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'Seoul', 'Berlin', 'Delhi', 'Tokyo', 'Warsaw', 'Helsinki', 'Madrid'}
+   </pre>
+    	</div>  
+</section>
+
+
+<!--remove()-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">remove(): </h3>
+	<p><code>remove()</code> method used to remove a specific element from a set</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.remove("Tokyo")
+print(cities)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+ {'Delhi', 'Berlin', 'Madrid'}   	
+   </pre>
+    	</div>  
+</section>
+
+<!--clear-->
+<section class="mb-5 my-2 mx-2">
+	
+	<h3 class="h3 fw-bold mb-3">clear(): </h3>
+	<p><code>clear()</code> method clears all items in the set and prints an empty set.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.clear()
+print(cities)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+set()
+   </pre>
+    	</div>  
+</section>
+<a href="/py_set" class="btn btn-light rounded-pill shadow-sm">‹Python Set</a>
+          
+<a href="/py_dict" class="btn btn-dark rounded-pill ms-2">Python Dictionary›</a>
+{%endblock body%}

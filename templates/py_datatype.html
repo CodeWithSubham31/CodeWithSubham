@@ -1,0 +1,134 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Datatype</title>
+{%endblock title%}
+{%block body%}
+<main class="container py-4">
+	<section class="mb-5 my-2 mx-2">
+    <h2 class="h3 fw-bold mb-3">What is Datatype?</h2>
+    <!--ul class="ps-3">
+      <li class="mb-3 lh-lg"-->
+        <p class="mb-3 lh-lg">Data type specifies the type of value a variable requires to do various operations without causing an error. By default, Python provides the following built-in data types:</p>
+    <!--numeric datatypes-->
+     <div>
+     	<h3 class="h3 fw-bold mb-3">Numeric Data : int, float </h3>
+     	<ul>
+     	 <li class="mb-3 lh-lg"><code>int</code> : 10,20,11,2</li>
+     	 <li class="mb-3 lh-lg"><code>float</code> : 10.0,20.0,11.0,2.0</li>
+     	</ul>
+     	<div>
+     	<h5>Example : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+num1 = 10#type int
+num2 = 20.0#type int
+
+print(num1)#output : 10
+print(num2)#output : 20.0
+      </pre>
+     	</div>
+     </div>
+     </section>
+     <section class="mb-5 my-2 mx-2">
+     <!--text datatype-->
+     <div>
+     	<h3 class="h3 fw-bold mb-3">Text data : str </h3>
+     	<ul>
+     	<li><code>str</code> : "hello world","python is best"</li>
+     	</ul>
+     	<div>
+     	<h5>Example : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = "subham"
+planet = "earth"
+
+print(name)#output : subham
+print(planet)#output : earth
+     		</pre>	
+     	</div>
+     </div>
+     <!--boolean datatyoe-->
+      </section>
+      
+      <section class="mb-5 my-2 mx-2">
+      <div>
+      	<h3>Boolean data : True, False</h3>
+      	<ul>
+      	<li class="mb-3 lh-lg"><code>True</code> : In programming <code>True</code> means yes.</li>
+      	<li class="mb-3 lh-lg"><code>False</code> : In programming <code>False</code> means no.</li>
+      	</ul>
+      	</div>
+      	<div>
+      	<h5>Example</h5>
+      		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+a = True
+b = False
+
+print(a)#output : True
+print(b)#output : False
+      		</pre>
+      	</div>
+      </section>
+      <!--list tuple set-->
+ <section class="mb-5 my-2 mx-2">
+ 	<h3 class="h3 fw-bold mb-3">Structured Data : list, tuple, set</h3>
+ 	<ul>
+     	<li class="mb-3 lh-lg"><code>list</code> : ["subham","shayan","biltu","rocky","ronni"]</li>
+     	</ul>
+ 		<li class="mb-3 lh-lg"><code>tuple</code> : ("subham","shayan","biltu","rocky","ronni")</li>
+     	</ul>
+ 		<li class="mb-3 lh-lg"><code>set</code> : {"subham","shayan","biltu","rocky","ronni"}</li>
+     	</ul>
+     	<div>
+     	<h2>Lists Data</h2>
+     	<p>	A list is an ordered collection of data with elements separated by a comma and enclosed within square brackets. Lists are mutable and can be modified after creation.</p>
+     	<h5>Example : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+names=  ["subham","shayan","biltu","rocky","ronni"]#creating list
+print(names)
+      </pre>
+      <div>
+      <h5>Output : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+["subham","shayan","biltu","rocky","ronni"]
+      </pre>
+      </div>
+     	</div>
+     	</section>
+     	<section class="mb-5 my-2 mx-2">
+     	<div>
+     	<h5>Tuple Data</h5>
+     	<p>	 A tuple is an ordered collection of data with elements separated by a comma and enclosed within parentheses. Tuples are immutable and cannot be modified after creation.</p>
+     	<h5>Example : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+marks =  (100,90,80,70,60,50)#creating set
+
+print(marks)
+      </pre>
+      <h5>Output</h5>
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+ (100,90,80,70,60,50)
+      </pre>
+     	</div>
+     	
+ </section>
+     	 <section class="mb-5 my-2 mx-2">
+     	<div>
+     	<h5>Set Data</h5>
+     	<p>	Set is an unordered collection of elements in which no element is repeated. The elements of sets are separated by a comma and contained within curly braces.</p>
+     	<h5>Example : </h5>
+     		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name_set =  {"subham","shayan","biltu","rocky","ronni"}#creating set
+
+print(name_set)
+      </pre>
+      <h5>Output</h5>
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{"subham","shayan","biltu","rocky","ronni"}
+      </pre>
+     	</div>
+     	
+ </section>
+  <a href="/py_variable" class="btn btn-light rounded-pill shadow-sm">‹ Python Variable</a>
+<a href="/py_operator" class="btn btn-dark rounded-pill ms-2">Python Operator ›</a>
+</main>
+{%endblock body%}

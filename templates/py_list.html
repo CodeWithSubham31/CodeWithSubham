@@ -1,0 +1,65 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python List</title>
+{%endblock title%}
+{%block body%}
+
+<div class="mb-5 my-2 mx-1">
+	<h1>Python List</h1>
+</div>
+<section class="mb-5 my-2 mx-2">
+	 <ul class="ps-3">
+      <li class="mb-3 lh-lg">
+        Lists are ordered collections of data items.
+      </li>
+      <li class="mb-3 lh-lg">
+      They store multiple items in a single variable.
+      </li>
+      <li class="mb-3 lh-lg">
+        List items are separated by commas and enclosed within square brackets <code>[]</code>.
+      </li>
+       <li class="mb-3 lh-lg">
+       Lists are changeable, meaning we can alter them after creation.
+      </li>
+    </ul>
+    
+      <div class="my-3">
+    <h5>Example 1 : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+lst1 = [1, 2, 2, 3, 5, 4, 6]
+lst2 = ["Red", "Green", "Blue"]
+print(lst1)
+print(lst2)
+    	</pre>
+    	</div>
+    	
+    	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+[1, 2, 2, 3, 5, 4, 6]
+["Red", "Green", "Blue"]
+    	</pre>
+    	</div>
+    	</section>
+    	<section class="mb-5 my-2 mx-2">
+    	<div class="my-3">
+    <h5>Example 2  : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+details = ["Abhijeet", 18, "FYBScIT", 9.8]
+print(details)
+    	</pre>
+    	</div>
+    	
+    		<div class="my-3">
+    <h5>Output: </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+["Abhijeet", 18, "FYBScIT", 9.8]
+
+    	</pre>
+    	<p>As we can see, a single list can contain items of different data types.</p>
+    	</div>
+    	</section>
+<a href="/escape" class="btn btn-light rounded-pill shadow-sm">‹Escape Chracter</a>
+          
+<a href="/list_index" class="btn btn-dark rounded-pill ms-2">List Index›</a>
+{%endblock body%}

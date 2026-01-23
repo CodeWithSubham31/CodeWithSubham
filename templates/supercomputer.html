@@ -1,0 +1,130 @@
+{%extends "base.html"%}
+{%block title%}
+<title>CodeWithSubham | Super Computer?</title>
+{%endblock title%}
+{%block body%}
+ <body>
+
+<div class="container py-5">
+
+    <!-- Page Heading -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Super Computer</h1>
+        <p class="text-muted">The fastest and most powerful computers in the world</p>
+    </div>
+
+    <!-- Introduction -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h3>What is a Super Computer?</h3>
+            <p>
+                A supercomputer is a very powerful computer that can perform millions or billions of calculations per second.
+                It is used for complex tasks like weather forecasting, space research, artificial intelligence, and scientific simulations.
+            </p>
+            <p>
+                Supercomputers use thousands of processors working together to solve extremely large problems quickly.
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/static/super.jpeg" class="img-fluid rounded shadow" alt="Super Computer">
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">Key Features</h3>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4>Extreme Speed</h4>
+                    <p>Performs trillions of calculations per second.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4> Massive Processing Power</h4>
+                    <p>Thousands of CPUs and GPUs work together.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4>Large Memory</h4>
+                    <p>Stores huge amounts of data for fast processing.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Uses -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">Uses of Super Computers</h3>
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                
+                <div class="card text-center p-3 shadow-sm">Weather Forecasting</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm"> Space Research</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Medical Research</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Artificial Intelligence</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Examples -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">Famous Super Computers</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>Speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontier</td>
+                        <td>USA</td>
+                        <td>Exascale</td>
+                    </tr>
+                    <tr>
+                        <td>Fugaku</td>
+                        <td>Japan</td>
+                        <td>Petascale</td>
+                    </tr>
+                    <tr>
+                        <td>PARAM Siddhi</td>
+                        <td>India</td>
+                        <td>Petascale</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   <a class="btn btn-dark my-2" href="/study"> &lt;Previus Topic </a>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-dark my-1" href="/quantumcomputer"> Next Topic &gt;</a>
+</div>
+
+</div>
+
+</body>
+
+{%endblock body%}

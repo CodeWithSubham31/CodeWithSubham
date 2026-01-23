@@ -1,0 +1,106 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Datatype</title>
+{%endblock title%}
+{%block body%}
+	<section class="mb-5 my-2 mx-2">
+    <h2 class="h3 fw-bold mb-3">Python Operators</h2>
+  
+        <p class="mb-3 lh-lg">Python has different types of operators for different operations. They are as follows:</p>
+    </section>
+    
+
+
+  <!-- Arithmetic Operators -->
+  <section class="mb-5 my-2 mx-2">
+  <h2>Arithmetic Operators</h2>
+  <p>Arithmetic operators are used to perform arithmetic/mathematical operations.</p>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Operator Name</th>
+      <th>Operator Sign</th>
+      <th>Example</th>
+    </tr>
+    <tr><td>Addition</td><td>+</td><td>5 + 3 = 8</td></tr>
+    <tr><td>Subtraction</td><td>-</td><td>9 - 4 = 5</td></tr>
+    <tr><td>Multiplication</td><td>*</td><td>6 * 2 = 12</td></tr>
+    <tr><td>Division</td><td>/</td><td>10 / 2 = 5</td></tr>
+    <tr><td>Modulus</td><td>%</td><td>10 % 3 = 1</td></tr>
+    <tr><td>Exponentiation</td><td>**</td><td>2 ** 3 = 8</td></tr>
+    <tr><td>Floor Division</td><td>//</td><td>10 // 3 = 3</td></tr>
+  </table>
+</section>
+  <!-- Comparison Operators -->
+  <section class="mb-5 my-2 mx-1">
+  <h2>Comparison Operators</h2>
+  <p>These operators are used to compare values.</p>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Operator Name</th>
+      <th>Operator Sign</th>
+      <th>Example</th>
+    </tr>
+    <tr><td>Equal to</td><td>==</td><td>5 == 5 → True</td></tr>
+    <tr><td>Not Equal to</td><td>!=</td><td>5 != 3 → True</td></tr>
+    <tr><td>Greater than</td><td>&gt;</td><td>7 &gt; 3 → True</td></tr>
+    <tr><td>Less than</td><td>&lt;</td><td>2 &lt; 5 → True</td></tr>
+    <tr><td>Greater than or Equal to</td><td>&gt;=</td><td>6 &gt;= 6 → True</td></tr>
+    <tr><td>Less than or Equal to</td><td>&lt;=</td><td>4 &lt;= 8 → True</td></tr>
+  </table>
+</section>
+  <!-- Logical Operators -->
+  <section class="mb-5 my-2 mx-2">
+  <h2>Logical Operators</h2>
+  <p>These operators are used to deal with logical operations.</p>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Operator Name</th>
+      <th>Operator Sign</th>
+      <th>Example</th>
+    </tr>
+    <tr><td>Logical AND</td><td>and</td><td>(5 &gt; 2) and (4 &gt; 1) → True</td></tr>
+    <tr><td>Logical OR</td><td>or</td><td>(5 &lt; 2) or (4 &gt; 1) → True</td></tr>
+    <tr><td>Logical NOT</td><td>not</td><td>not(5 &gt; 2) → False</td></tr>
+  </table>
+</section>
+  <!-- Assignment Operators -->
+ <section class="mb-5 my-2 mx-2"> 
+  <h2>Assignment Operators</h2>
+  <p>These operators are used to assign values to variables.</p>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Operator Name</th>
+      <th>Operator Sign</th>
+      <th>Example</th>
+    </tr>
+    <tr><td>Assign</td><td>=</td><td>x = 5</td></tr>
+    <tr><td>Add and Assign</td><td>+=</td><td>x += 3</td></tr>
+    <tr><td>Subtract and Assign</td><td>-=</td><td>x -= 2</td></tr>
+    <tr><td>Multiply and Assign</td><td>*=</td><td>x *= 4</td></tr>
+    <tr><td>Divide and Assign</td><td>/=</td><td>x /= 2</td></tr>
+    <tr><td>Modulus and Assign</td><td>%=</td><td>x %= 3</td></tr>
+    <tr><td>Exponent and Assign</td><td>**=</td><td>x **= 2</td></tr>
+    <tr><td>Floor Div and Assign</td><td>//=</td><td>x //= 2</td></tr>
+  </table>
+</section>
+  <!-- Bitwise Operators -->
+  <section class="mb-5 my-2 mx-2">
+  <h2>Bitwise Operators</h2>
+  <p>Bitwise operators are used to deal with binary operations.</p>
+  <table border="1" cellspacing="0" cellpadding="8">
+    <tr>
+      <th>Operator Name</th>
+      <th>Operator Sign</th>
+      <th>Example</th>
+    </tr>
+    <tr><td>Bitwise AND</td><td>&amp;</td><td>5 &amp; 3 = 1</td></tr>
+    <tr><td>Bitwise OR</td><td>|</td><td>5 | 3 = 7</td></tr>
+    <tr><td>Bitwise XOR</td><td>^</td><td>5 ^ 3 = 6</td></tr>
+    <tr><td>Bitwise NOT</td><td>~</td><td>~5 = -6</td></tr>
+    <tr><td>Left Shift</td><td>&lt;&lt;</td><td>5 &lt;&lt; 1 = 10</td></tr>
+    <tr><td>Right Shift</td><td>&gt;&gt;</td><td>5 &gt;&gt; 1 = 2</td></tr>
+  </table>
+</section>
+  <a href="/py_datatype" class="btn btn-light rounded-pill shadow-sm">‹ Python Datatype</a>
+<a href="/py_input" class="btn btn-dark rounded-pill ms-2">Python Input ›</a>
+{%endblock body%}

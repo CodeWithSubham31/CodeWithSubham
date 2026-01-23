@@ -1,0 +1,144 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | List Indexs</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>List Indexs</h1>
+</div>
+
+<section class="mb-5 my-2 mx-2">
+	<p>Each item/element in a list has its own unique index. This index can be used to access any particular item from the list. The first item has index <code>[0]</code>, the second item has index <code>[1]</code>, the third item has index <code>[2]</code>, and so on.</p>
+	
+	
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["Red", "Green", "Blue", "Yellow", "Green"]
+#          [0]      [1]     [2]      [3]      [4]
+    	</pre>
+    	</div>
+</section>
+<div class="mb-5 my-2 mx-1">
+	<h1>Accessing list items:</h1>
+</div>
+
+
+
+<section class="mb-5 my-2 mx-2">
+	  <h3 class="h3 fw-bold mb-3">Positive Indexing :</h3>
+	  <p>As we have seen that list items have an index, we can access items using these indexes.</p>
+	 
+	  <div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["Red", "Green", "Blue", "Yellow", "Green"]
+#          [0]      [1]     [2]      [3]      [4]
+print(colors[2])
+print(colors[4])
+print(colors[0])
+    	</pre>
+    	</div>
+	  
+	  
+	   <div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Blue
+Green
+Red
+    	</pre>
+    	</div>
+	  
+</section>
+<section class="mb-5 my-2 mx-2">
+	 <h3 class="h3 fw-bold mb-3">Negative Indexing :</h3>
+	 <p>Similar to positive indexing, negative indexing is also used to access items, but from the end of the list. The last item has index <code>[-1]</code>, the second last item has index <code>[-2]</code>, the third last item has index <code>[-3]</code>, and so on.</p>
+	 
+	 
+	 <div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["Red", "Green", "Blue", "Yellow", "Green"]
+#          [-5]    [-4]    [-3]     [-2]      [-1]
+print(colors[-1])
+print(colors[-3])
+print(colors[-5])
+    	</pre>
+    	</div>
+    	
+    	
+    		 <div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Green
+Blue
+Red
+    	</pre>
+    	</div>
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Check for item:</h3>
+	<p>We can check if a given item is present in the list. This is done using the <code>in</code> keyword.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["Red", "Green", "Blue", "Yellow", "Green"]
+if "Yellow" in colors:
+    print("Yellow is present.")
+else:
+    print("Yellow is absent.")
+    	</pre>
+    	</div>
+    	
+    			 <div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Yellow is present.
+    	</pre>
+    	</div>
+    	
+</section>
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">Range Of Index : </h3>
+	<p>You can print a range of list items by specifying where you want to start, where you want to end, and if you want to skip elements in between the range.</p>
+	
+	<div class="my-3">
+    <h5>Syntax :  </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+List[start : end : jumpIndex]
+    	</pre>
+    	</div>
+    	
+    	
+    	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+animals = ["cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow"]
+print(animals[3:7])  # using positive indexes
+print(animals[-7:-2])  # using negative indexes
+    	</pre>
+    	</div>
+    	
+    	
+    	<div class="my-3">
+    <h5>Output :  </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['mouse', 'pig', 'horse', 'donkey']
+['bat', 'mouse', 'pig', 'horse', 'donkey']
+    	</pre>
+    	<p>Here, we provide the index of the element from where we want to start and the index of the element till which we want to print the values.</p>
+    	<p><b>Note:</b> The element of the end index provided will not be included.</p>
+    	</div>
+</section>
+
+
+<a href="/py_list" class="btn btn-light rounded-pill shadow-sm">‹Python List</a>
+          
+<a href="/list_method" class="btn btn-dark rounded-pill ms-2">List Method›</a>
+{%endblock body%}

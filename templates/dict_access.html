@@ -1,0 +1,99 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Dictionary</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Access Dictionary Items</h1>
+</div>
+
+
+<section class="mb-5 my-2 mx-2">
+<h3 class="h3 fw-bold mb-3">Accessing Single Values:</h3>
+<p>Values in a dictionary can be accessed using keys. We can access dictionary values by mentioning keys either in square brackets or by using the <code>get</code> method.</p>
+
+<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info['name'])
+print(info.get('eligible'))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Karan
+True
+   </pre>
+    	</div>  
+</section>
+
+
+<section class="mb-5 my-2 mx-2">
+<h3 class="h3 fw-bold mb-3">Accessing Multiple Values:</h3>
+<p>We can print all the values in the dictionary using the <code>values()</code> method.</p>
+
+<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info.values())
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+dict_values(['Karan', 19, True])
+   </pre>
+    	</div>  
+</section>
+
+
+
+<section class="mb-5 my-2 mx-2">
+<h3 class="h3 fw-bold mb-3">Accessing Keys:</h3>
+<p>We can print all the keys in the dictionary using the <code>keys()</code> method.</p>
+
+<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info.keys())
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+dict_keys(['name', 'age', 'eligible'])
+   </pre>
+    	</div>  
+</section>
+
+
+
+<section class="mb-5 my-2 mx-2">
+<h3 class="h3 fw-bold mb-3">Accessing Key value pairs:</h3>
+<p>We can print all the key-value pairs in the dictionary using the <code>items()</code> method.</p>
+
+<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info.items())
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+dict_items([('name', 'Karan'), ('age', 19), ('eligible', True)])
+   </pre>
+    	</div>  
+</section>
+
+
+<a href="/py_dict" class="btn btn-light rounded-pill shadow-sm">‹Python Dictionary</a>
+          
+<a href="/add_remove_dict" class="btn btn-dark rounded-pill ms-2">Add/Remove Dict Items›</a>
+
+{%endblock body%}

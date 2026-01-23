@@ -1,0 +1,31 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; |  Python Dictionary</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Python Dictionary</h1>
+</div>
+
+
+<section class="mb-5 my-2 mx-2">
+	<p>Dictionaries are ordered collections of data items. They store multiple items in a single variable. Dictionary items are key-value pairs that are separated by commas and enclosed within curly brackets <code>{}</code>.</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+{'name': 'Karan', 'age': 19, 'eligible': True}
+   </pre>
+    	</div>  
+</section>
+
+<a href="/set_method" class="btn btn-light rounded-pill shadow-sm">‹Set Method</a>
+          
+<a href="/dict_access" class="btn btn-dark rounded-pill ms-2">Access Dictionary Items›</a>
+{%endblock body%}

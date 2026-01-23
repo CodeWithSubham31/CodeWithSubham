@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%block title%}
+    <title>Base template</title>
+    {%endblock title%}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-body" data-bs-theme="white">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">&lt;/CodeWithSubham&gt;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tutorial">Tutorial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blogs</a>
+        </li>
+
+        {% if user.is_authenticated %}
+          
+          <li class="nav-item">
+            <form method="post" action="{% url 'user_logout' %}" style="display:inline;">
+              {% csrf_token %}
+              <button class="nav-link btn btn-link" type="submit" style="text-decoration:none;">Log Out</button>
+            </form>
+          </li>
+        {% else %}
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/user_signup">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user_signin">Sign In</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <center><img src="/static/python.webp" style="height:100px;"></center>
+    <h5 class="text-center">Python Tutorial</h5>
+    
+    <!--offcanvas-->
+    
+    
+    <button class="btn btn-dark mx-2 my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+  Topics
+</button>
+
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Topics</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+    <!--topics-->
+      <a href="/py_intro" style="color: black; text-decoration: none;" class="text-center">
+    <p>Introduction To Python</p>
+  </a>
+    
+    <a href="/py_install" style="color: black; text-decoration: none;" class="text-center">
+    <p>Instalation of Python</p>
+  </a>
+  
+  <a href="/py_syntax" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Syntax</p>
+  </a>
+  
+  <a href="/py_comment" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Comments</p>
+  </a>
+  
+  <a href="/py_variable" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Variable</p>
+  </a>
+  
+  <a href="/py_datatype" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Datatypes</p>
+  </a>
+  
+     <a href="/py_operator" style="color: black; text-decoration: none;" class="text-center">
+    <p>Operators</p>
+  </a>
+    
+    <a href="/py_input" style="color: black; text-decoration: none;" class="text-center">
+    <p>Input() Function</p>
+  </a>
+  
+  <a href="/type_casting" style="color: black; text-decoration: none;" class="text-center">
+    <p>Type Casting</p>
+  </a>
+ 
+  
+  <a href="/py_string" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Strings</p>
+  </a>
+  
+  <a href="/str_method" style="color: black; text-decoration: none;" class="text-center">
+    <p>String Methods</p>
+  </a>
+  
+     <a href="/f_string" style="color: black; text-decoration: none;" class="text-center">
+    <p>F String</p>
+  </a>
+    
+    <a href="/escape" style="color: black; text-decoration: none;" class="text-center">
+    <p>Escape Chracters</p>
+  </a>
+  
+  <a href="/py_list" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python List</p>
+  </a>
+    
+  <a href="/list_index" style="color: black; text-decoration: none;" class="text-center">
+    <p>List Indexs</p>
+  </a>
+  
+  <a href="/list_method" style="color: black; text-decoration: none;" class="text-center">
+    <p>List Method</p>
+  </a>
+  
+  <a href="/py_tuple" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Tuple</p>
+  </a>
+  
+    <a href="/tuple_indexes" style="color: black; text-decoration: none;" class="text-center">
+    <p>Tuple Indexes</p>
+  </a>
+  
+  <a href="/tuple_manipulating" style="color: black; text-decoration: none;" class="text-center">
+    <p>Tuple Manipulating</p>
+  </a>
+  
+     <a href="/py_set" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Set</p>
+  </a>
+    
+    <a href="/set_method" style="color: black; text-decoration: none;" class="text-center">
+    <p>Set Method</p>
+  </a>
+  
+  <a href="/py_dict" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Dictionary</p>
+  </a>
+  
+  <a href="/dict_access" style="color: black; text-decoration: none;" class="text-center">
+    <p>Access Dictionary Items</p>
+  </a>
+    
+  <a href="/add_remove_dict" style="color: black; text-decoration: none;" class="text-center">
+    <p>Add/Remove Dict Items</p>
+  </a>
+  
+  <a href="/py_if" style="color: black; text-decoration: none;" class="text-center">
+    <p>If statement</p>
+  </a>
+  
+  <a href="/py_if_else" style="color: black; text-decoration: none;" class="text-center">
+    <p>If-Else statement</p>
+  </a>
+  
+     <a href="/py_if_elif_else" style="color: black; text-decoration: none;" class="text-center">
+    <p>If-Elif-Else statement</p>
+  </a>
+    
+    <a href="/py_nested_if" style="color: black; text-decoration: none;" class="text-center">
+    <p>Nested If Else statement</p>
+  </a>
+  
+  <a href="/py_for_loop" style="color: black; text-decoration: none;" class="text-center">
+    <p>For Loop</p>
+  </a>
+  
+  <a href="/py_while_loop" style="color: black; text-decoration: none;" class="text-center">
+    <p>While Loop</p>
+  </a>
+  
+  <a href="/py_break" style="color: black; text-decoration: none;" class="text-center">
+    <p>Break keyword</p>
+  </a>
+  
+  <a href="/py_continue" style="color: black; text-decoration: none;" class="text-center">
+    <p>Continue keyword</p>
+  </a>
+  
+     <a href="/py_function" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python Function</p>
+  </a>
+    
+    <a href="/py_func_arg" style="color: black; text-decoration: none;" class="text-center">
+    <p>Function Argument</p>
+  </a>
+  
+  <a href="/py_module" style="color: black; text-decoration: none;" class="text-center">
+    <p>Modules</p>
+  </a>
+  
+  <a href="/py_oops" style="color: black; text-decoration: none;" class="text-center">
+    <p>Python OOP'S</p>
+  </a>
+  
+  <a href="/py_self" style="color: black; text-decoration: none;" class="text-center">
+    <p>self Method</p>
+  </a>
+  
+  <a href="/__init__" style="color: black; text-decoration: none;" class="text-center">
+    <p>__init__() Method</p>
+  </a>
+  
+     <a href="/py_error" style="color: black; text-decoration: none;" class="text-center">
+    <p>Error Handeling</p>
+  </a>
+    
+    <a href="/py_project_1" style="color: black; text-decoration: none;" class="text-center">
+    <p>Project(Stone Paper Secior Game)</p>
+  </a>
+ <a href="/py_project_2" style="color: black; text-decoration: none;" class="text-center">
+    <p>Project(Jarvis AI assistant)</p>
+  </a>   
+  
+
+  </div>
+</div>
+    <main class="container py-4">
+    {%block body%}
+    {%endblock body%}
+    </main>
+      <footer class="bg-body-tertiary mt-auto py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Main -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Main</h5>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-decoration-none text-dark">Home</a></li>
+              <li><a href="/user_signup" class="text-decoration-none text-dark">Sign Up</a></li>
+              <li><a href="/user_signin" class="text-decoration-none text-dark">Sign In</a></li>
+            </ul>
+          </div>
+          <!-- Learn -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Learn</h5>
+            <ul class="list-unstyled">
+              <li><a href="/tutorial" class="text-decoration-none text-dark">Tutorials</a></li>
+              <li><a href="/blog" class="text-decoration-none text-dark">Blogs</a></li>
+              
+            </ul>
+          </div>
+          <!-- Social -->
+          <div class="col-6 col-md-3 mb-3">
+            <h5 class="fw-bold">Social</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/PynRobotics" class="text-decoration-none text-dark"><i class="bi bi-github"></i> GitHub</a></li>
+              <li><a href="https://youtube.com/@codewithsubham31" class="text-decoration-none text-dark"><i class="bi bi-youtube"></i> YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bottom text -->
+        <div class="text-center mt-3">
+          <small>Made with ❤️ and ☕ in India</small>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Datatype</title>
+{%endblock title%}
+{%block body%}
+	<section class="mb-5 my-2 mx-2">
+    <h2 class="h3 fw-bold mb-3">Python Input</h2>
+    <p>The <code>input()</code> function in Python is used to take input from the user. It always returns the input as a string.</p>
+    </section>
+    <section class="mb-5 my-2 mx-2">
+    	<h5>Syntax : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+input(prompt)
+    	</pre>
+    </section>
+      <section class="mb-5 my-2 mx-2">
+    	<h5>Simple Example of input()</h5>
+    	<p>In this code<code> input()</code>get your name as input and return hello with your name. </p>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = input("What is your name : ")
+print("hello ",name)
+    	</pre>
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+What is your name : subham 
+hello subham
+    	</pre>
+    </section>
+    <section class="mb-5 my-2 mx-2">
+    	<h5>Basic calculator using input()</h5>
+    	<p>We can use <code>int()</code> for convert string number to integer</p>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+num1 = int(input("Enter 1st number : "))
+num2 = int(input("Enter 2nd number : "))
+print(num1 + num2)
+    	</pre>
+    	<h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Enter 1st number : 10
+Enter 2nd number : 20
+30
+    	</pre>
+    </section>
+      <a href="/py_operator" class="btn btn-light rounded-pill shadow-sm">‹ Python Operator</a>
+<a href="/type_casting" class="btn btn-dark rounded-pill ms-2">Type Casting›</a>
+{%endblock body%}

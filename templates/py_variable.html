@@ -1,0 +1,65 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Python Variable</title>
+{%endblock title%}
+{%block body%}
+<main class="container py-4">
+	<section class="mb-5 my-2 mx-2">
+    <h2 class="h3 fw-bold mb-3">What is Variable</h2>
+    <!--ul class="ps-3">
+      <li class="mb-3 lh-lg"-->
+        <p class="mb-3 lh-lg">Variables are containers that store information that can be manipulated and referenced later by the programmer within the code.</p>
+      <p class="mb-3 lh-lg">In Python, the programmer does not need to declare the variable type explicitly; we just need to assign the value to the variable.</p>
+      <h5>Example : </h5>
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+name = "Subham"	#type steing
+age = 15					#type integer
+married = False		#type boolean
+      </pre>
+      </section>
+      <section class="mb-5 my-2 mx-2">
+       <h2 class="h3 fw-bold mb-3">Access Variable : </h2>
+      <p>To access any variable data you can write the name of the variable in <code>print()</code> Function</p>
+      <h5>Example : </h5>
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+
+print(name)#outout : subham
+ptint(age)#output : 15
+print(married)#output : False
+      </pre>
+      </section>
+      </section>
+      <section class="mb-5 my-2 mx-2">
+      <p>It is always advisable to keep variable names descriptive and to follow a set of conventions while creating variables: </p>
+      <ul class="ps-3">
+      <li class="mb-2 lh-lg">Variable names can only contain alphanumeric characters and underscores (A-z, 0-9, and _).</li>
+      <li class="mb-2 lh-lg">Variable names must start with a letter or the underscore character.</li>
+      <li ckass="mb-2 lh-lg">Variables are case sensitive.</li>
+      <li class="mb-2 lh-lg">Variable names cannot start with a number.</li>
+      <h5>Example: </h5>
+      <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+Color = "yellow"    # valid variable name
+cOlor = "red"       # valid variable name
+_color = "blue"     # valid variable name
+
+5color = "green"    # invalid variable name
+$color = "orange"   # invalid variable name
+      </pre>
+      </section>
+      <section class="mb-5 my-2 mx-2">
+      	<p class="mb-2 lh-lg">Sometimes, a multi-word variable name can be difficult to read by the reader. To make it more readable, the programmer can do the following: </p>
+      	<h5>Example: </h5>
+      	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+NameOfCity = "Mumbai"       # Pascal case
+nameOfCity = "Berlin"       # Camel case
+name_of_city = "Moscow"     # snake case
+      </pre>
+      </section>
+      <section class="mb-5 my-2 mx-2">
+      <h5>Scope of Variable : </h5>
+      <p class="mb-2 lh-lg">The scope of the variable is the area within which the variable has been created. Based on this, a variable can either have a local scope or a global scope.</p>
+      </section>
+        <a href="/py_comment" class="btn btn-light rounded-pill shadow-sm">‹ Python Comments</a>
+<a href="/py_datatype" class="btn btn-dark rounded-pill ms-2">Python Datatype ›</a>
+</main>
+{%endblock body%}

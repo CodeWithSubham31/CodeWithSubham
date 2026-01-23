@@ -1,0 +1,41 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Self Method</title>
+{%endblock title%}
+{%block body%}
+	<div class="mb-5 my-2 mx-2">
+		<h1>Self method</h1>
+	</div>
+	<section class="mb-5 my-2 mx-2">
+		<p>The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.</p>
+	<p>It must be provided as the extra parameter inside the method definition.</p>	
+		
+	</section>
+	<section class="mb-5 my-2 mx-2">	
+		<h5>Example : </h5>
+		<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+class Details:
+    name = "Simran"
+    age = 20
+
+    def desc(self):
+        print("My name is", self.name, "and I'm", self.age, "years old.")
+
+obj1 = Details()
+obj1.desc()
+	</pre>
+	</section>
+	
+		<section class="mb-5 my-2 mx-2">	
+		<h5>Output : </h5>
+			<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" 
+         style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+My name is Simran and I'm 20 years old. 
+	</pre>
+	</section>
+	
+<a href="/py_oops" class="btn btn-light rounded-pill shadow-sm">‹ Python OOP's</a>
+          
+<a href="/__init__" class="btn btn-dark rounded-pill ms-2">__init__() Method›</a>	
+{%endblock body%}

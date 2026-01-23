@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block title%}
+<title>Contact Us</title>
+{%endblock title%}
+{%block body%}
+<h1 class="text-center">Contact Us</h1>
+<p class="text-center">If you have any problem related to programming you can fill the form regarding to your problem i will send you a message to you in the email solution of the problem.</p>
+<div class="container">
+    <form method="post" action="/contact" >
+        {%csrf_token%}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" aria-describedby="subject" name="subject">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+        </div>
+        <center> <button type="submit" class="btn btn-outline-dark">Send Message</button></center>
+    </form>
+</div>
+{%endblock body%}

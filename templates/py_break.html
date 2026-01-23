@@ -1,0 +1,39 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | Break Keyword</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>Break Keyword</h1>
+</div>
+	<section class="mb-5 my-2 mx-2">
+	<h5>What is break keyword?</h5>
+		<p>The <code>break</code> keyword is a loop control statement in Python. It is used to stop a loop immediately, even if the loop condition is still true.</p>
+
+<h5>Example:</h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+for i in range(10):
+    	if i == 7:
+    		print("7 founded")
+    		break
+    	</pre>
+    	 <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0 my-2" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+0
+1
+2
+3
+4
+5
+6
+7
+7 founded
+    	</pre>
+    	<p>In this code when the for loop value reached to 7 the loop will stop and return 7 found </p>
+    	</div>
+	</section>
+	
+		<a href="/py_while_loop" class="btn btn-light rounded-pill shadow-sm">‹ While Loop</a>
+          
+<a href="/py_continue" class="btn btn-dark rounded-pill ms-2">Continue Keyword›</a>
+{%endblock body%}

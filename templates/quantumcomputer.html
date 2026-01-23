@@ -1,0 +1,159 @@
+{%extends "base.html"%}
+{%block title%}
+<title>CodeWithSubham | Quantum Computer?</title>
+{%endblock title%}
+{%block body%}
+<body>
+
+<div class="container py-5">
+
+    <!-- Page Heading -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Quantum Computer</h1>
+        <p class="text-muted">The future of ultra-fast computing</p>
+    </div>
+
+    <!-- Introduction -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h3>What is a Quantum Computer?</h3>
+            <p>
+                A quantum computer is a special type of computer that uses quantum mechanics principles
+                to process information. Instead of using bits (0 or 1), it uses qubits, which can be both
+                0 and 1 at the same time.
+            </p>
+            <p>
+                This allows quantum computers to solve complex problems much faster than traditional computers.
+            </p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="/static/quantum.webp" class="img-fluid rounded shadow" alt="Quantum Computer">
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">How Does a Quantum Computer Work?</h3>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4>Qubits</h4>
+                    <p>Qubits can exist in multiple states at once using superposition.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4> Entanglement</h4>
+                    <p>Qubits can be connected so that changes in one affect the other instantly.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center p-3">
+                    <h4>Quantum Gates</h4>
+                    <p>Quantum gates manipulate qubits to perform calculations.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4">Key Features</h3>
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Extremely Fast Processing</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Parallel Computation</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm"> Based on Quantum Physics</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm"> Advanced Cryptography</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Uses -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4"> Uses of Quantum Computers</h3>
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Drug Discovery</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Financial Modeling</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Cyber Security</div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center p-3 shadow-sm">Artificial Intelligence</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Comparison -->
+    <div class="mb-5">
+        <h3 class="text-center mb-4"> Classical vs Quantum Computer</h3>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Classical Computer</th>
+                        <th>Quantum Computer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Unit</td>
+                        <td>Bit (0 or 1)</td>
+                        <td>Qubit (0 and 1)</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>Limited</td>
+                        <td>Extremely Fast</td>
+                    </tr>
+                    <tr>
+                        <td>Processing</td>
+                        <td>Sequential</td>
+                        <td>Parallel</td>
+                    </tr>
+                    <tr>
+                        <td>Availability</td>
+                        <td>Common</td>
+                        <td>Limited</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+ <a class="btn btn-dark my-2" href="/supercomputer"> &lt;Previus Topic </a>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a class="btn btn-dark my-1" href="/softwareengineer"> Next Topic &gt;</a>
+</div>
+</div>
+
+</body>
+
+{%endblock body%}

@@ -1,0 +1,328 @@
+{%extends "py_base.html"%}
+{%block title%}
+	<title>&lt;/CodeWithSubham&gt; | List Method</title>
+{%endblock title%}
+{%block body%}
+<div class="mb-5 my-2 mx-2">
+	<h1>List Method</h1>
+</div>
+
+<!--len() method-->
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">len() : </h3>
+	<p><code>len()</code> used to get the length of a list
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+list = [10,20,30,40,50,60,70,80,90]
+print(len(list))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+9
+   </pre>
+    	</div>  	
+</section>
+
+<!--sort()  method-->
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">sort() : </h3>
+	<p><code>sort()</code> method sorts the list in ascending order.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue", "green"]
+colors.sort()
+print(colors)
+
+num = [4,2,5,3,6,1,2,1,2,8,9,7]
+num.sort()
+print(num)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['blue', 'green', 'indigo', 'voilet']
+[1, 1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+   </pre>
+    	</div>  	
+</section>
+
+<!--reverse() method-->
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">reverse() : </h3>
+	<p>
+	<code>reverse()</code> method reverses the order of the list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue", "green"]
+colors.reverse()
+print(colors)
+
+num = [4,2,5,3,6,1,2,1,2,8,9,7]
+num.reverse()
+print(num)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['green', 'blue', 'indigo', 'voilet']
+[7, 9, 8, 2, 1, 2, 1, 6, 3, 5, 2, 4]
+   </pre>
+    	</div>  	
+</section>
+
+<!--index() method-->
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">index(): </h3>
+	<p>
+	<code>index()</code> method returns the index of the first occurrence of the list item.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "green", "indigo", "blue", "green"]
+print(colors.index("green"))
+
+num = [4,2,5,3,6,1,2,1,3,2,8,9,7]
+print(num.index(3))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+1
+3
+   </pre>
+    	</div>  	
+</section>
+
+<!--count() method-->
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">count(): </h3>
+	<p>
+	<code>count()</code> method returns the count of the number of items with the given value.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "green", "indigo", "blue", "green"]
+print(colors.count("green"))
+
+num = [4,2,5,3,6,1,2,1,3,2,8,9,7]
+print(num.count(2))
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+2
+3
+   </pre>
+    	</div>  	
+</section>
+
+<!--copy()-->
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">copy(): </h3>
+	<p>
+<code>copy()</code> method returns a copy of the list. This can be done to perform operations on the list without modifying the original list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "green", "indigo", "blue"]
+newlist = colors.copy()
+print(colors)
+print(newlist)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['voilet', 'green', 'indigo', 'blue']
+['voilet', 'green', 'indigo', 'blue']
+   </pre>
+    	</div>  	
+</section>
+
+<!--append() method-->
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">append(): </h3>
+	<p>
+<code>append()</code> method appends items to the end of the existing list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue"]
+colors.append("green")
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['voilet', 'indigo', 'blue', 'green']
+   </pre>
+    	</div>  	
+</section>
+
+
+<!--insert() method-->
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">insert : </h3>
+	<p>
+<code>insert()</code> method inserts an item at the given index. The user has to specify the index and the item to be inserted within the<code>insert()</code> method.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue"]
+#           [0]        [1]      [2]
+
+colors.insert(1, "green")   # inserts item at index 1
+# updated list: colors = ["voilet", "green", "indigo", "blue"]
+#       indexes              [0]       [1]       [2]      [3]
+
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['voilet', 'green', 'indigo', 'blue']
+   </pre>
+    	</div>  	
+</section>
+
+<!--extend() method-->
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">extend(): </h3>
+	<p>
+<code>extend()</code> method adds an entire list or any other collection datatype (set, tuple, dictionary) to the existing list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+# add a list to a list
+colors = ["voilet", "indigo", "blue"]
+rainbow = ["green", "yellow", "orange", "red"]
+colors.extend(rainbow)
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['voilet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red']
+   </pre>
+    	</div>  	
+</section>
+
+
+<!--pop() method-->
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">pop(): </h3>
+	<p>
+<code>pop()</code> method removes the last item of the list if no index is provided. If an index is provided, then it removes the item at that specified index.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["Red", "Green", "Blue", "Yellow", "Green"]
+colors.pop()        # removes the last item of the list
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['Red', 'Green', 'Blue', 'Yellow']
+   </pre>
+    	</div>  	
+</section>
+
+
+<!--remove() method-->
+
+
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">remove(): </h3>
+	<p>
+<code>remove()</code> method removes a specific item from the list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue", "green", "yellow"]
+colors.remove("blue")
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+['voilet', 'indigo', 'green', 'yellow']
+   </pre>
+    	</div>  	
+</section>
+
+
+<!--clear()-->
+
+
+
+
+<section class="mb-5 my-2 mx-2">
+	<h3 class="h3 fw-bold mb-3">clear(): </h3>
+	<p>
+<code>clear()</code> method clears all items in the list and prints an empty list.
+	</p>
+	<div class="my-3">
+    <h5>Example : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+colors = ["voilet", "indigo", "blue", "green", "yellow"]
+colors.clear()
+print(colors)
+    	</pre>
+    	</div>
+  	<div class="my-3">
+    <h5>Output : </h5>
+    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
+[]
+   </pre>
+    	</div>  	
+</section>
+<a href="/list_index" class="btn btn-light rounded-pill shadow-sm">‹List index</a>
+          
+<a href="/py_tuple" class="btn btn-dark rounded-pill ms-2">Python Tuple›</a>
+{%endblock body%}
