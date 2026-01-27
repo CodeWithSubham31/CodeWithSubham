@@ -23,7 +23,7 @@ def contact(request):
     # Save to database
         contact = Contact(name = name,email=email,phone=phone,subject=subject,message=message)
         contact.save()
-        messages.success(request,"Your form has submited")
+        messages.success(request,"Message Sent")
         return render(request,"contact.html")
     return render(request,"contact.html")
 

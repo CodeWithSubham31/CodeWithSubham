@@ -4,9 +4,17 @@
 {%endblock title%}
 {%block body%}
 <h1 class="text-center">Contact Us</h1>
-<p class="text-center">If you have any problem related to programming you can fill the form regarding to your problem i will send you a message to you in the email solution of the problem.</p>
-<div class="container">
-    <form method="post" action="/contact" >
+
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact Us</h1>
+            <p class="col-lg-10 fs-4">If you have any problem related to programming you can contact us and we will try to solve your problem.</p>
+            
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form method="post" action="/contact">
         {%csrf_token%}
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -33,5 +41,8 @@
         </div>
         <center> <button type="submit" class="btn btn-outline-dark">Send Message</button></center>
     </form>
+        </div>
+    </div>
 </div>
+
 {%endblock body%}
