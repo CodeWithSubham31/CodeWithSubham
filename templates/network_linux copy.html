@@ -1,117 +1,109 @@
-{%extends "linux_base.html"%}
-{%block title%}
-    <title>&lt;/CodeWithSubham&gt; | Network management commands</title>
-{%endblock title%}
-{%block body%}
+{% extends "linux_base.html" %}
+
+{% block title %}
+<title>&lt;/CodeWithSubham&gt; | Network Management Commands</title>
+{% endblock title %}
+
+{% block body %}
 <main class="container py-4">
+
 <div class="mb-5 my-2 mx-2">
-	<h1>Network management commands</h1>
+    <h1>Network Management Commands</h1>
 </div>
-<!--ifconfig-->
-<section class="mb-5 my-2 mx-2">
-        <h5>ifconfig</h5>
-        <p>This command returns the ip address of your command. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-ifconfig
-    	</pre>
-    	</div>
-    </section>
-<!--ip a-->
 
+<!-- ifconfig -->
 <section class="mb-5 my-2 mx-2">
-        <h5>ip a</h5>
-        <p>This command is same as ifconfig but it highlight the main information.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-ip a
-    	</pre>
-    	</div>
-    </section>
-<!--netstart-->
-<section class="mb-5 my-2 mx-2">
-        <h5>netstart</h5>
-        <p>This command used to check the network connection.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-netstart
-    	</pre>
-    	</div>
-    </section>
+    <h5>ifconfig</h5>
+    <p>This command displays network interface information, including IP address, MAC address, and status.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ifconfig</pre>
+    </div>
+</section>
 
-<!--iwconfig-->
+<!-- ip a -->
 <section class="mb-5 my-2 mx-2">
-        <h5>iwconfig</h5>
-        <p>This command used to config that wireless network interfaces.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-iwconfig
-    	</pre>
-    	</div>
-    </section>
-<!--nslookup-->
-<section class="mb-5 my-2 mx-2">
-        <h5>nslookup</h5>
-        <p>This command used to get the ip address of any target</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-nslookup google.com
-    	</pre>
-    	</div>
-    </section>
-<!--arp-->
-<section class="mb-5 my-2 mx-2">
-        <h5>arp</h5>
-        <p>This command used to check the ip, mac address of your device.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-arp -a
-    	</pre>
-    	</div>
-    </section>
+    <h5>ip a</h5>
+    <p>This command shows detailed and modern network interface information. It is the replacement for <code>ifconfig</code>.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ip a</pre>
+    </div>
+</section>
 
-<!--route-->
+<!-- netstat -->
 <section class="mb-5 my-2 mx-2">
-        <h5>route</h5>
-        <p>This command used to check open port of your device. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-route
-    	</pre>
-    	</div>
-    </section>
+    <h5>netstat</h5>
+    <p>This command displays active network connections, listening ports, and routing information.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">netstat -tulnp</pre>
+    </div>
+</section>
 
-<!--ping-->
+<!-- iwconfig -->
 <section class="mb-5 my-2 mx-2">
-        <h5>ping</h5>
-        <p>This command used to check any website is active or deactive. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-ping youtube.com
-    	</pre>
-    	</div>
-    </section>
-<!--tracepath-->
+    <h5>iwconfig</h5>
+    <p>This command is used to configure and display wireless network interface information.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">iwconfig</pre>
+    </div>
+</section>
+
+<!-- nslookup -->
 <section class="mb-5 my-2 mx-2">
-        <h5>tracepath</h5>
-        <p>This command used to get the ip address of a website</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-tracepath -4 google
-    	</pre>
-    	</div>
-    </section>
-    <a href="/file_linux" class="btn btn-light rounded-pill shadow-sm">‹File handeling commands</a>
+    <h5>nslookup</h5>
+    <p>This command is used to find the IP address of a domain name using DNS.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">nslookup google.com</pre>
+    </div>
+</section>
+
+<!-- arp -->
+<section class="mb-5 my-2 mx-2">
+    <h5>arp</h5>
+    <p>This command displays the ARP table, showing IP and MAC address mappings of connected devices.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">arp -a</pre>
+    </div>
+</section>
+
+<!-- route -->
+<section class="mb-5 my-2 mx-2">
+    <h5>route</h5>
+    <p>This command displays the routing table used to determine how network packets are forwarded.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">route -n</pre>
+    </div>
+</section>
+
+<!-- ping -->
+<section class="mb-5 my-2 mx-2">
+    <h5>ping</h5>
+    <p>This command checks whether a host or website is reachable and measures network latency.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ping youtube.com</pre>
+    </div>
+</section>
+
+<!-- tracepath -->
+<section class="mb-5 my-2 mx-2">
+    <h5>tracepath</h5>
+    <p>This command shows the network path (hops) taken by packets to reach a destination.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">tracepath google.com</pre>
+    </div>
+</section>
+
+<a href="/file_linux" class="btn btn-light rounded-pill shadow-sm">
+    ‹ File Handling Commands
+</a>
+
 </main>
-       
-          
-{%endblock body%}
+{% endblock body %}

@@ -1,305 +1,256 @@
-{%extends "linux_base.html"%}
-{%block title%}
-    <title>&lt;/CodeWithSubham&gt; | File management commands</title>
-{%endblock title%}
-{%block body%}
+{% extends "linux_base.html" %}
+
+{% block title %}
+<title>&lt;/CodeWithSubham&gt; | File Management Commands</title>
+{% endblock title %}
+
+{% block body %}
 <main class="container py-4">
+
 <div class="mb-5 my-2 mx-2">
-	<h1>File handeling commands</h1>
+    <h1>File Handling Commands</h1>
 </div>
-<!--ls command-->
-	<section class="mb-5 my-2 mx-2">
-        <h5>ls</h5>
-        <p>This command show all the files and folders that stord in a folder. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-ls
-    	</pre>
-    	</div>
-    </section>
 
-    <!--ls -a command-->
-    	<section class="mb-5 my-2 mx-2">
-        <h5>ls -a</h5>
-        <p>This command show all the hidden files and folders </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-ls -a
-    	</pre>
-    	</div>
-    </section>
-
-    <!--cd command-->
-    	<section class="mb-5 my-2 mx-2">
-        <h5>cd</h5>
-        <p>Change Directory.</p>
-        <p>In Terminal we called folder as directory</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-cd Desktop
-    	</pre>
-    	</div>
-    </section>
-    
-    <!--cd .. command-->
-    	<section class="mb-5 my-2 mx-2">
-        <h5>cd ..</h5>
-        <p>This command return you to the previous directory</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-cd ..
-    	</pre>
-    	</div>
-    </section>
-
-    <!--touch command-->
-    	<section class="mb-5 my-2 mx-2">
-        <h5>touch</h5>
-        <p>This command create a file in your working directory. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-touch file.txt
-    	</pre>
-    	</div>
-    </section>
-
-    <!--echo command-->
-  	<section class="mb-5 my-2 mx-2">
-        <h5>echo</h5>
-        <p>This command print any text that you write after <code>echo</code> command.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-echo hello world
-    	</pre>
-    	</div>
-             <div class="my-3">
-                <p>This command also used to create files.</p>
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-echo hello world > file2.txt
-    	</pre>
-        <p>Now this command will create a file in your current working directory that have hello world.</p>
-    	</div>
-    </section>
-
-    <!--cat command-->
-        	<section class="mb-5 my-2 mx-2">
-        <h5>cat</h5>
-        <p>This command used to read a file </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-cat file2.txt
-    	</pre>
-    	</div>
-    </section>
-
-    <!--cp command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>cp</h5>
-        <p>This command used to cpy a file to another directory.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-cp file.txt Downloads
-    	</pre>
-    	</div>
-    </section>
-    
-    <!--mv command-->
-
-     	<section class="mb-5 my-2 mx-2">
-        <h5>mv</h5>
-        <p>This command used to rename a file. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-mv file.txt file3.txt
-    	</pre>
-    	</div>
-    </section>
-    <!--rm command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>rm</h5>
-        <p>This command used to remove a file. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-rm file.txt
-    	</pre>
-    	</div>
-    </section>
-
-    <!--mkdir command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>mkdir</h5>
-        <p>This command create a folder in your working directory. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-mkdir folder1
-    	</pre>
-    	</div>
-    </section>
-
-    <!--rmdir command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>rmdir</h5>
-        <p>This command remove a empty folder. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-rmdir myself
-    	</pre>
-    	</div>
-    </section>
-
-    <!--rm -rf command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>rm -rf</h5>
-        <p>This command used to remove a folder are not empty</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-rm -rf myself
-    	</pre>
-    	</div>
-    </section>
-
-    <!--tree commnd-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>tree</h5>
-        <p>This command return a tree shaped structurs of your file anf folder</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-tree
-    	</pre>
-    	</div>
-    </section>
-
-    <!--mmv command-->
-     	<section class="mb-5 my-2 mx-2">
-        <h5>mmv</h5>
-        <p>This command used to move a file to another folder. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-mmv file.txt Downloads
-    	</pre>
-    	</div>
-    </section>
-    <!--free-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>free</h5>
-        <p>This command returns all the information about your computer memory. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-free
-    	</pre>
-    	</div>
-    </section>
-
-    <!--ps-->
-     <section class="mb-5 my-2 mx-2">
-        <h5>ps</h5>
-        <p>This command returns all the active process list with the id </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-free
-    	</pre>
-    	</div>
-    </section>
-<!--kill-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>kill</h5>
-        <p>This command used to kill any process that are running</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-kill process id
-    	</pre>
-    	</div>
-    </section>
-<!--nano-->
+<!-- ls command -->
 <section class="mb-5 my-2 mx-2">
-        <h5>nano</h5>
-        <p>nano is a prebuilt text editor for linux. You can create files using this software</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-nano file.txt
-    	</pre>
-    	</div>
-    </section>
+    <h5>ls</h5>
+    <p>This command shows all files and folders in the current directory.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ls</pre>
+    </div>
+</section>
 
-<!--more-->
+<!-- ls -a command -->
 <section class="mb-5 my-2 mx-2">
-        <h5>more</h5>
-        <p>This command used to read a big files</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-more file.txt
-    	</pre>
-    	</div>
-    </section>
-    <!--less command-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>less</h5>
-        <p>This command also used to read a big files. But this command is faster than more.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-less file.txt
-    	</pre>
-    	</div>
-    </section>
-    <!--head-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>head</h5>
-        <p>This command show first lines of a file</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-head file.txt
-    	</pre>
-    	</div>
-    </section>
-    <!--tail-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>tail</h5>
-        <p>This command show that last lines of a file.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-tail file.txt
-    	</pre>
-    	</div>
-    </section>
+    <h5>ls -a</h5>
+    <p>This command shows all files including hidden files and folders.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ls -a</pre>
+    </div>
+</section>
 
-    <!--sort-->
-    <section class="mb-5 my-2 mx-2">
-        <h5>sort</h5>
-        <p>This command used to sort a file</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-sort file.txt
-    	</pre>
-    	</div>
-    </section>
-<a href="/linux_basic_command" class="btn btn-light rounded-pill shadow-sm">‹Linux basic commands</a>
-          
-<a href="/network_linux" class="btn btn-dark rounded-pill ms-2">Networking commands ›</a>
+<!-- cd command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>cd</h5>
+    <p>This command is used to change the directory.</p>
+    <p>In the terminal, folders are called directories.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">cd Desktop</pre>
+    </div>
+</section>
+
+<!-- cd .. command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>cd ..</h5>
+    <p>This command takes you to the previous directory.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">cd ..</pre>
+    </div>
+</section>
+
+<!-- touch command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>touch</h5>
+    <p>This command creates a new file in the current directory.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">touch file.txt</pre>
+    </div>
+</section>
+
+<!-- echo command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>echo</h5>
+    <p>This command prints the text written after the <code>echo</code> command.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">echo hello world</pre>
+    </div>
+
+    <div class="my-3">
+        <p>This command can also be used to create a file.</p>
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">echo hello world > file2.txt</pre>
+        <p>This will create a file named <code>file2.txt</code> containing "hello world".</p>
+    </div>
+</section>
+
+<!-- cat command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>cat</h5>
+    <p>This command is used to read the contents of a file.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">cat file2.txt</pre>
+    </div>
+</section>
+
+<!-- cp command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>cp</h5>
+    <p>This command is used to copy a file to another directory.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">cp file.txt Downloads</pre>
+    </div>
+</section>
+
+<!-- mv command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>mv</h5>
+    <p>This command is used to rename or move a file.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">mv file.txt file3.txt</pre>
+    </div>
+</section>
+
+<!-- rm command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>rm</h5>
+    <p>This command is used to delete a file.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">rm file.txt</pre>
+    </div>
+</section>
+
+<!-- mkdir command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>mkdir</h5>
+    <p>This command creates a new folder in the current directory.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">mkdir folder1</pre>
+    </div>
+</section>
+
+<!-- rmdir command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>rmdir</h5>
+    <p>This command deletes an empty folder.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">rmdir folder1</pre>
+    </div>
+</section>
+
+<!-- rm -rf command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>rm -rf</h5>
+    <p>This command deletes a folder and all its contents permanently.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">rm -rf folder1</pre>
+    </div>
+</section>
+
+<!-- tree command -->
+<section class="mb-5 my-2 mx-2">
+    <h5>tree</h5>
+    <p>This command displays files and folders in a tree structure.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">tree</pre>
+    </div>
+</section>
+
+<!-- free -->
+<section class="mb-5 my-2 mx-2">
+    <h5>free</h5>
+    <p>This command shows information about system memory usage.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">free</pre>
+    </div>
+</section>
+
+<!-- ps -->
+<section class="mb-5 my-2 mx-2">
+    <h5>ps</h5>
+    <p>This command displays the list of currently running processes with their IDs.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">ps</pre>
+    </div>
+</section>
+
+<!-- kill -->
+<section class="mb-5 my-2 mx-2">
+    <h5>kill</h5>
+    <p>This command is used to stop a running process using its process ID.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">kill 1234</pre>
+    </div>
+</section>
+
+<!-- nano -->
+<section class="mb-5 my-2 mx-2">
+    <h5>nano</h5>
+    <p>Nano is a built-in text editor in Linux used to create and edit files.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">nano file.txt</pre>
+    </div>
+</section>
+
+<!-- more -->
+<section class="mb-5 my-2 mx-2">
+    <h5>more</h5>
+    <p>This command is used to read large files page by page.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">more file.txt</pre>
+    </div>
+</section>
+
+<!-- less -->
+<section class="mb-5 my-2 mx-2">
+    <h5>less</h5>
+    <p>This command is similar to <code>more</code> but faster and more flexible.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">less file.txt</pre>
+    </div>
+</section>
+
+<!-- head -->
+<section class="mb-5 my-2 mx-2">
+    <h5>head</h5>
+    <p>This command shows the first few lines of a file.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">head file.txt</pre>
+    </div>
+</section>
+
+<!-- tail -->
+<section class="mb-5 my-2 mx-2">
+    <h5>tail</h5>
+    <p>This command shows the last few lines of a file.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">tail file.txt</pre>
+    </div>
+</section>
+
+<!-- sort -->
+<section class="mb-5 my-2 mx-2">
+    <h5>sort</h5>
+    <p>This command sorts the contents of a file alphabetically.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">sort file.txt</pre>
+    </div>
+</section>
+
+<a href="/linux_basic_command" class="btn btn-light rounded-pill shadow-sm">‹ Linux Basic Commands</a>
+<a href="/network_linux" class="btn btn-dark rounded-pill ms-2">Networking Commands ›</a>
+
 </main>
-   
-{%endblock body%}
+{% endblock body %}

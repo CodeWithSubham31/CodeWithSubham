@@ -1,168 +1,164 @@
-{%extends "linux_base.html"%}
-{%block title%}
-    <title>&lt;/CodeWithSubham&gt; | Linux basic commands</title>
-{%endblock title%}
-{%block body%}
+{% extends "linux_base.html" %}
+
+{% block title %}
+<title>&lt;/CodeWithSubham&gt; | Linux Basic Commands</title>
+{% endblock title %}
+
+{% block body %}
 <main class="container py-4">
-    <div class="mb-5 my-2 mx-2">
-	<h1>Basic linux commands</h1>
+
+<div class="mb-5 my-2 mx-2">
+    <h1>Basic Linux Commands</h1>
 </div>
-	<section class="mb-5 my-2 mx-2">
-        <h5>whoami</h5>
-        <p>This command returns the username that you set while you booting the os. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-whoami
-    	</pre>
-    	</div>
-    </section>
-    <section class="mb-5 my-2 mx-2">
-        <h5>uname</h5>
-        <p>This command returns the name of your os. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-uname
-    	</pre>
-    	</div>
-    </section>
 
-    <section class="mb-5 my-2 mx-2">
-        <h5>passwd</h5>
-        <p>This command used to change the password of your linux distro. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-passwd
-    	</pre>
-    	</div>
-    </section>
+<!-- whoami -->
+<section class="mb-5 my-2 mx-2">
+    <h5>whoami</h5>
+    <p>This command displays the currently logged-in username.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">whoami</pre>
+    </div>
+</section>
 
-        <section class="mb-5 my-2 mx-2">
-        <h5>sudo su</h5>
-        <p>This command used to activate the super user mode.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-sudo su
-    	</pre>
-    	</div>
-    </section>
+<!-- uname -->
+<section class="mb-5 my-2 mx-2">
+    <h5>uname</h5>
+    <p>This command displays information about your operating system.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">uname</pre>
+    </div>
+</section>
 
-           <section class="mb-5 my-2 mx-2">
-        <h5>date</h5>
-        <p>This command return time and date.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-date
-    	</pre>
-    	</div>
-    </section>
+<!-- passwd -->
+<section class="mb-5 my-2 mx-2">
+    <h5>passwd</h5>
+    <p>This command is used to change your Linux user password.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">passwd</pre>
+    </div>
+</section>
 
-    <section class="mb-5 my-2 mx-2">
-        <h5>uptime</h5>
-        <p>This command return time.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-uptime
-    	</pre>
-    	</div>
-    </section>
+<!-- sudo su -->
+<section class="mb-5 my-2 mx-2">
+    <h5>sudo su</h5>
+    <p>This command switches to superuser (root) mode.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">sudo su</pre>
+    </div>
+</section>
 
-           <section class="mb-5 my-2 mx-2">
-        <h5>history</h5>
-        <p>This command return all the command that you used previously</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-history
-    	</pre>
-    	</div>
-    </section>
+<!-- date -->
+<section class="mb-5 my-2 mx-2">
+    <h5>date</h5>
+    <p>This command displays the current date and time.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">date</pre>
+    </div>
+</section>
 
-         <section class="mb-5 my-2 mx-2">
-        <h5>pwd</h5>
-        <p>Print working directory</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-pwd
-    	</pre>
-    	</div>
-    </section>
+<!-- uptime -->
+<section class="mb-5 my-2 mx-2">
+    <h5>uptime</h5>
+    <p>This command shows how long the system has been running.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">uptime</pre>
+    </div>
+</section>
 
-         <section class="mb-5 my-2 mx-2">
-        <h5>clear</h5>
-        <p>This command clear the terminal screen</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-clear
-    	</pre>
-    	</div>
-    </section>
+<!-- history -->
+<section class="mb-5 my-2 mx-2">
+    <h5>history</h5>
+    <p>This command displays the list of previously executed commands.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">history</pre>
+    </div>
+</section>
 
-         <section class="mb-5 my-2 mx-2">
-        <h5>apt-get update</h5>
-        <p>This command updates your system</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-sudo apt-get update
-    	</pre>
-    	</div>
-    </section>
+<!-- pwd -->
+<section class="mb-5 my-2 mx-2">
+    <h5>pwd</h5>
+    <p>This command prints the current working directory path.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">pwd</pre>
+    </div>
+</section>
 
-     <section class="mb-5 my-2 mx-2">
-        <h5>apt-get upgrade</h5>
-        <p>This command upgrade your system</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-sudo apt-get upgrade
-    	</pre>
-    	</div>
-    </section>
+<!-- clear -->
+<section class="mb-5 my-2 mx-2">
+    <h5>clear</h5>
+    <p>This command clears the terminal screen.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">clear</pre>
+    </div>
+</section>
 
-         <section class="mb-5 my-2 mx-2">
-        <h5>reboot</h5>
-        <p>This command shutdown your linu distro and get you into the main os.</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-reboot
-    	</pre>
-    	</div>
-    </section>
+<!-- apt-get update -->
+<section class="mb-5 my-2 mx-2">
+    <h5>apt-get update</h5>
+    <p>This command updates the package list from repositories.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">sudo apt-get update</pre>
+    </div>
+</section>
 
-         <section class="mb-5 my-2 mx-2">
-        <h5>man</h5>
-        <p>This command gives information about any command</p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-man cd
-    	</pre>
-    	</div>
-    </section>
-<!--sleep command-->
- 	<section class="mb-5 my-2 mx-2">
-        <h5>sleep</h5>
-        <p>This command shut down your terminal for some seconds. </p>
-        <div class="my-3">
-    <h5>Example : </h5>
-    	<pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0" style="font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', monospace;">
-sleep 5
-    	</pre>
-        <p>Now your terminal will shutdown for 5 seconds.</p>
-    	</div>
-    </section>
-    <a href="/basic_linux" class="btn btn-light rounded-pill shadow-sm">‹Basic of linux</a>
-          
-<a href="/file_linux" class="btn btn-dark rounded-pill ms-2">File management commands ›</a>
+<!-- apt-get upgrade -->
+<section class="mb-5 my-2 mx-2">
+    <h5>apt-get upgrade</h5>
+    <p>This command upgrades installed packages to the latest version.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">sudo apt-get upgrade</pre>
+    </div>
+</section>
+
+<!-- reboot -->
+<section class="mb-5 my-2 mx-2">
+    <h5>reboot</h5>
+    <p>This command restarts the system.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">reboot</pre>
+    </div>
+</section>
+
+<!-- man -->
+<section class="mb-5 my-2 mx-2">
+    <h5>man</h5>
+    <p>This command displays the manual (help) page of any command.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">man cd</pre>
+    </div>
+</section>
+
+<!-- sleep -->
+<section class="mb-5 my-2 mx-2">
+    <h5>sleep</h5>
+    <p>This command pauses execution for a specified number of seconds.</p>
+    <div class="my-3">
+        <h5>Example:</h5>
+        <pre class="flex-grow-1 bg-dark text-light rounded-3 p-3 mb-0">sleep 5</pre>
+        <p>The terminal will wait for 5 seconds before continuing.</p>
+    </div>
+</section>
+
+<a href="/basic_linux" class="btn btn-light rounded-pill shadow-sm">
+    ‹ Basics of Linux
+</a>
+
+<a href="/file_linux" class="btn btn-dark rounded-pill ms-2">
+    File Management Commands ›
+</a>
+
 </main>
-      
-{%endblock body%}
+{% endblock body %}
