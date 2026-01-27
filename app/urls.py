@@ -56,5 +56,9 @@ urlpatterns = [
     path("__init__",views.__init__,name="__init__ method"),
     path("py_error",views.py_error,name="python error"),
     path("py_project_1",views.py_project_1,name="1st python project"),
-    path("py_project_2",views.py_project_2,name="2nd python project")
+    path("py_project_2",views.py_project_2,name="2nd python project"),
+    path("basic_linux",views.basic_linux,name="basic of linux"),
+    path("linux_basic_command",views.linux_basic_command,name="linux basic command"),
+    path("file_linux",views.file_linux,name="linux file management commands"),
+    path("network_linux",views.network_linux,name = "metworking commands"),
 ]

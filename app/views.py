@@ -186,3 +186,15 @@ def py_project_1(request):
 
 def py_project_2(request):
 	return render(request,"jarvis.html")
+
+def basic_linux(request):
+	return render(request,"basic_linux.html")
+
+def linux_basic_command(request):
+	return render(request,"linux_basic_command.html")
+
+def file_linux(request):
+	return render(request,"file_linux.html")
+
+def network_linux(request):
+	return render(request,"network_linux.html")
