@@ -28,6 +28,9 @@ def contact(request):
         return render(request,"contact.html")
     return render(request,"contact.html")
 
+def signup(request):
+	return render(request,"signup.html")
+
 def signin(request):
     return render(request,"signin.html")
 

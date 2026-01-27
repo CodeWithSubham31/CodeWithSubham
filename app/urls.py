@@ -6,6 +6,7 @@ urlpatterns = [
     path("tutorial",views.tutorial,name="tutorial"),
     path("blog",views.blog,name="blog"),
     path("contact",views.contact,name="contact us"),
+    path("signup",views.signup,name="sign up"),
     path("signin",views.signin,name="sign in"),
     path("which",views.which,name = "which programming should you learn"),
     path("fast",views.fast,name = "how to learn any programming language faster"),
